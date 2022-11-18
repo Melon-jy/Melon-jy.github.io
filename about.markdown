@@ -4,6 +4,7 @@ title: Profile
 permalink: /Profile/
 ---
 
+<img src="https://github.com/Melon-jy/Melon-jy.github.io/blob/main/profile.jpg?raw=true" width="400">
 **이름 : 이준영**
 
 **생일 : 2월 7일**
