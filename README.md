@@ -1,4 +1,4 @@
-# 이준영의 자기소개
+# 이준영(비전공자)의 사이트 꾸미기
 
 <img src="https://github.com/Melon-jy/melon-jy.github.io/blob/main/melons.jpg?raw=true">
 
@@ -23,9 +23,9 @@
 <br>이스포츠랩 아카데미 Valorant 코치 2021.04~2022.10
 <br>오산대학교 2022여름캠프 Valorant 담당교수
 
+
 # 웹 프로그래밍 실습 내용
 
-## VS code를 이용하여 블로그를 꾸며보기 과제
+## VScode와 git을 이용하여 블로그 만들기
 
-## VM 생성 및 git 개인 페이지 변경하기
-
+## Vagrant과 VM을 이용해 centos 만들고 개인 페이지 파일 변경하기
