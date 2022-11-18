@@ -37,13 +37,13 @@ virtual machine monitor이나 Virtual machine manager이며 약어로 VMM이라 
 
 하이퍼바이저에는 유형1 또는 유형2 두 가지 유형의 하이퍼 바이저가 있습니다."Native"또는 "Bare-metal" 하이퍼바이저라고도 하는 유형1 하이퍼 바이저는 호스트 하드웨어에서 직접 실행되어 하드웨어를 제어하고 게스트 가상머신을 관리합니다.
 
-<img src="https://github.com/Melon-jy/Melon-jy.github.io/blob/main/Type1.jpg" width="400">
+<img src="https://github.com/Melon-jy/Melon-jy.github.io/blob/main/Type1.jpg?raw=true" width="400">
 
 유형1의 주요 이점은 가상 시스템 또는 게스트 운영 체제 중 하나의 문제가 하드웨어에서 실행중인 다른 게스트 운영체제에 영향을 미치지 않는다는 것입니다.
 
 유형1 하이퍼바이저에는 대표적으로 Xen, Oracle VM server for SPARC, Oracle VM server for x86, Microsoft Hyper-V 및 VMware의 ESX/ESXi가 있습니다.
 
-<img src="https://github.com/Melon-jy/Melon-jy.github.io/blob/main/Type2.jpg" width="400">
+<img src="https://github.com/Melon-jy/Melon-jy.github.io/blob/main/Type2.jpg?raw=true" width="400">
 
 호스트 된 하이퍼바이저라고도 하는 유형2 하이퍼바이저는 시스템의 다른 응용 프로그램과 마찬가지로 일반적인 OS에서 실행되며 이 경우 게스트 OS는 호스트에서 프로세스로 실행되는 반면 하이퍼바이저는 게스트 OS와 호스트 OS를 분리합니다.
 
