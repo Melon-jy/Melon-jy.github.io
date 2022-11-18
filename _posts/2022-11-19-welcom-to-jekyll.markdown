@@ -68,3 +68,26 @@ virtual machine monitor이나 Virtual machine manager이며 약어로 VMM이라 
 하이퍼바이저가 일부 조치에 의해 컨테이너보다 더 안전한 것으로 간주될 수도 있지만 하이퍼 바이저와 관련된 보안 문제가 없는 것은 아닙니다. 이론상 해커는 OS 아래에 하이퍼바이저로 설치되는 멀웨어 및 루트킷을 만들 수 있습니다.
 
 멀웨어가 OS아래에서 실행되기 때문에 멀웨어 방지 소프트웨어가 감지하지 않으면서 멀웨어가 OS작동(ex:암호 입력)을 가로챌 수 있기 때문에 하이퍼 재킹으로 알려진 이 프로세스를 탐지하기가 더 어려울 수 있습니다.</span>
+
+
+<br><br><br>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://melonweb.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
