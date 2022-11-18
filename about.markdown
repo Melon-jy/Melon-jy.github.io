@@ -2,6 +2,7 @@
 layout: page
 title: Profile
 permalink: /about/
+premalink: /more/
 ---
 
 <span style="font-size:24px;">**자기소개**</span>
