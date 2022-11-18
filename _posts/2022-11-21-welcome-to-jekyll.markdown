@@ -1,21 +1,13 @@
 ---
-layout: page
-title: Profile
-permalink: /Profile/
+layout: post
+title:  "Valorant MadMovie"
+date:   2022-11-11 00:15:30 +0900
+categories: jekyll update
 ---
 
-**이름 : 이준영**
+**Valorant Play MadMovie**
 
-**생일 : 2월 7일**
-
-**혈액형 : A형**
-
-**MBTI : INFJ-T**
-
-**취미 : 노래**
-
-**특기 : 게임**
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NMDRJbjxmeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 <br><br><br>
