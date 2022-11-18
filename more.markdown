@@ -1,8 +1,6 @@
 ---
 layout: page
 title: Career
-permalink: /Introduce/
-permalink: /About/
 premalink: /Career/
 ---
 

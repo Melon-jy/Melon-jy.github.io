@@ -1,9 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /Introduce/
 permalink: /About/
-premalink: /Career/
 ---
 
 <span style="font-size:24px;">온라인 활동 이미지</span>
