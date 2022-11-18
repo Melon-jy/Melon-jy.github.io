@@ -21,7 +21,7 @@
 title: 이준영의 개인 블로그
 email: crazygizmowh@nate.com
 description: >- # this means to ignore newlines until "baseurl:"
-  자기소개와 비트캠프 실습 내용
+  비트캠프 Naver Cloud Platporm AiaaS 1기 실습 내용
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://github.com/melon-jy"
 twitter_username: melon_vlrt  
