@@ -5,5 +5,5 @@ date:   2022-11-18 18:47:33 +0900
 categories: jekyll update
 ---
 
-<span style="font-size:24px;">**VSCode를 이용한 GitHub Blog 만들기**</span>
+<span style="font-size:24px;">VSCode를 이용한 GitHub Blog 만들기</span>
 

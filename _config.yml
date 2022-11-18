@@ -26,7 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://github.com/melon-jy"
 twitter_username: melon_Meltube  
 github_username:  Melon-jy
-
+Instagram_username: Meltube2020
 # Build settings
 theme: minima
 plugins:
