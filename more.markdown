@@ -1,10 +1,8 @@
 ---
 layout: page
-title: More
-permalink: /more/
+title: Career
+permalink: /Career/
 ---
-
-<span style="font-size:30px;">career</span>
 
 <span style="font-size:26px;">
 <br>MBTI : INFJ-T
