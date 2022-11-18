@@ -6,7 +6,7 @@ premalink: /Career/
 ---
 
 <span style="font-size:24px;">온라인 활동 이미지</span>
-<img src="melons.jpg" width="100">
+<img src="https://github.com/Melon-jy/melon-jy.github.io/blob/main/melons.jpg?raw=true" width="100">
 
 >>> **bitcamp**를 통해 **NaverCloudPlatporm AiaaS 1기** 수업을 받게된 **이준영** 입니다.
 
