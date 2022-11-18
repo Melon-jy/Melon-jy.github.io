@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Profile
-permalink: /about/
+title: About
+permalink: /Introduce/
+permalink: /About/
 premalink: /Career/
 ---
 

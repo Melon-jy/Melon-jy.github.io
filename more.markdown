@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Career
-permalink: /Career/
+permalink: /Introduce/
+permalink: /About/
+premalink: /Career/
 ---
 
 <span style="font-size:26px;">
