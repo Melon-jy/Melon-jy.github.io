@@ -6,7 +6,7 @@ permalink: /Introduce/
 
 <span style="font-size:24px;">온라인 활동 이미지</span>
 
-<img src="https://github.com/Melon-jy/melon-jy.github.io/blob/main/melons.jpg?raw=true" width="400">
+<img src="https://github.com/Melon-jy/melon-jy.github.io/blob/main/melons.jpg?raw=true" width="200">
 >>> **bitcamp**를 통해 **NaverCloudPlatporm AiaaS 1기** 수업을 받게된 **이준영** 입니다.
 
 >>>저는 [TwitchTV](HTTPS://WWW.Twitch.tv/Twitch_Melon_) 와[Youtube](https://www.youtube.com/channel/UCDiU10g3Xk0JpP3YF2PYqiw)에서 **인터넷 방송**을 했고  [이스포츠랩](https://esportslab.kr/)과 [오산대학교](HTTPS://www.osan.ac.kr/?menuno=127)에서 학생들에게 **Riot games**사의 **Valorant** 라는 게임 코칭과 강의를 했었고 웹개발에 관심이 생겨 교육을 받게 되었습니다.
