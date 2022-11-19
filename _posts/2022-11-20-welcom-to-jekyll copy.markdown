@@ -18,6 +18,8 @@ categories: jekyll update
 * 또한 모든 HTML 문법을 대체 할 수 없는듯 하다
 * 코드의 사용법은 [여기](https://gist.github.com/ihoneymon/652be052a0727ad59601)에서 볼 수 있다
 
+<br><br><br>
+
 <div id="disqus_thread"></div>
 <script>
     /**
