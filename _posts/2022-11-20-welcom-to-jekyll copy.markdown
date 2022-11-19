@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  id="비트캠프-과제3" class="common__H2-sc-11baoah-1 fagqOB">비트캠프-과제3</h2>
+title: <h2 id="비트캠프-과제3" class="common__H2-sc-11baoah-1 fagqOB"> 비트캠프-과제3</h2>
 date:   2022-11-19 02:15:30 +0900
 categories: jekyll update
 ---
 
-<span style="font-size:30px;">MD 문법(마크 문법)이란?</span>
+<h2 id="your-badge" class="common__H2-sc-11baoah-1 fagqOB">Your Badge</h2>
 
 <br><br><br>
 
