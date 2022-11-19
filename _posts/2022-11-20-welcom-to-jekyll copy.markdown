@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  https://img.shields.io/static/v1?label=<LABEL>&message=<"비트캠프 과제3">&color=<lightgrey>
+title:  id="비트캠프-과제3" class="common__H2-sc-11baoah-1 fagqOB">비트캠프-과제3</h2>
 date:   2022-11-19 02:15:30 +0900
 categories: jekyll update
 ---
