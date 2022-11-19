@@ -11,7 +11,7 @@ categories: jekyll update
 
 2. 구글링 혹은 네이버 검색창에 hypervisor 혹은 하이퍼바이저에 대한 검색
 
-공부[페이지](https://dora-guide.com/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B0%94%EC%9D%B4%EC%A0%80/) 복사 붙혀넣기 아님..손으로 타자침!<br><br><br>
+공부[페이지](https://dora-guide.com/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B0%94%EC%9D%B4%EC%A0%80/) ~~복사 붙혀넣기 아님..손으로 타자침!~~<br><br><br>
 
 <span style="font-size:24px;">
 하이퍼바이저(hypervisor)란 호스트 컴퓨터에서 다수의 OS를 동시에 실행하기 위한 논리적 플랫폼을 말합니다.
