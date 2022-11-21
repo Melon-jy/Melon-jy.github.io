@@ -62,3 +62,27 @@ categories: jekyll update
 
 ##### RCS(Revision Control System) 는 개발자가 혼자 개발을 하여 관리할 경우 로컬 버전 관리 시스템을 사용함
 ##### 버전 관리 시스템은 체크아웃을 할 경우 파일의 마지막 스냅샷(Snapshot)을 받는다.
+##### 스냅샷(snapshot)이란? 특정 시점의 파일 버전을 기록한 것.
+##### 로컬(local)은 한 개의 스냅샷만 유지한다.
+##### 만약 서버에 문제가 생기면 모든 내력(History)을 잃는다
+##### 로컬에 있는 스냅샷 중에서 최신 버전으로 복구한다.
+
+
+
+
+## Git Local 저장소와 작업 디렉토리
+
+##### ~/git/bitcamp-study/.git/ = 로컬 저장소:변경내역이 들어있음 전송시 최신 스냅샷(Snapshot)의 파일을 꺼낸다
+##### ~/git/bitcamp-study/other/ <- 작업 디렉토리
+##### docs/, .gitignore, README.md = .git 저장소에서 꺼낸 파일 및 디렉토리
+##### 로컬 저장소는 git client가 관리하는 폴더, 사용자가 직접 편집하면 안됨
+##### 특정 버전의 Snapshot을 꺼낼 수 있다
+
+## git 명령
+
+```
+ git config --system
+ git config --global
+ git config -l
+ git config -list
+ ```
