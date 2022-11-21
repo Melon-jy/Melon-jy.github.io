@@ -454,7 +454,20 @@ git pro2 목차 1~3 페이지 요약본..
              working directory| staging Area | .git directory(Repository
      [untracked][unmodified][modified]|[staged]|[committed]
 ```
+## git remote
 
+* 레파지토리 생성 bitcamp-ncp
+* add README.md
+* branch name 을 master에서 main으로 변경
+
+```
+[vagrant@host1 bitcamp-ncp]git branch -m main
+[vagrant@host1 bitcamp-ncp]git remote add origin https://github.com/username/bitcamp-ncp
+[vagrant@host1 bitcamp-ncp]git remote
+[vagrant@host1 bitcamp-ncp]git remote show origin
+[vagrant@host1 bitcamp-ncp]git pull origin main
+[vagrant@host1 bitcamp-ncp]git push --set-upstream origin main
+```
 
 <br><br><br>
 
