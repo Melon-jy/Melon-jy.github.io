@@ -20,10 +20,7 @@ categories: jekyll update
 ```
 
 
-# CVS vs SVN vs GIT
-
-<br>
-<br>
+<h1>CVS vs SVN vs GIT</h1>
 
 
 ## CVS(Concurrent Versions System)중앙 집중 관리 시스템
@@ -91,7 +88,8 @@ categories: jekyll update
  <br>
 
  ## git 사용법
-
+ ------------------------------------------------------------
+ 
  ### Local git 저장소 만들기
 
  <br>
