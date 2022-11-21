@@ -20,3 +20,5 @@ categories: jekyll update
 * local git 저장소와 원경 git 저장소를 연결한다.
 * local git 저장소의 내용을 원격 저장소에 push 한다.
 
+과제 완료 [깃허브업로드](https://github.com/Melon-jy/bitcamp-ncp2)
+
