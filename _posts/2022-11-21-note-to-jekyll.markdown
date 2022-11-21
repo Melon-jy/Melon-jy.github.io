@@ -398,6 +398,13 @@ ctrl + x
 [vagrant@host1 bitcamp-ncp]git status --short
 M a.txt
 ?? b.txt
+[vagrant@host1 bitcamp-ncp]git add b.txt
+[vagrant@host1 bitcamp-ncp]git status --short
+ M a.txt
+A  b.txt
+[vagrant@host1 bitcamp-ncp]git commit -m "3com"
+[vagrant@host1 bitcamp-ncp]git status --short
+ M a.txt
 [vagrant@host1 bitcamp-ncp]
 ```
 
