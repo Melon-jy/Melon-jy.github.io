@@ -21,6 +21,9 @@ categories: jekyll update
 
 # CVS vs SVN vs GIT
 
+
+
+
 ## CVS(Concurrent Versions System)중앙 집중 관리 시스템
 
 
@@ -29,11 +32,17 @@ categories: jekyll update
 ##### commit시 파일을 모두 서버에 전송 -> Overhead 발생(과부하)-> network를 과다 사용 (변경내용 외에 기존 내용까지 전송하기 때문에)
 ##### 서버에서 변경내역 관리 -> 중앙 집중 방식 -> 서버에 문제 발생시 변경 내역을 모두 잃음
 
+
+
+
 ## SVN(subversion) 중앙 집중 관리 시스템
 
 
 ##### Commit(checkin)-> 파일의 변경 부분만 서버에 전송하기 때문에 CVS 방식 보다 Network Overhead가 적음
 ##### 중앙 집중식이기 때문에 CVS와 마찬가지로 서버에 문제 발생될 경우 변경 내역을 모두 잃음
+
+
+
 
 ## Git(분산관리시스템)
 
@@ -44,6 +53,9 @@ categories: jekyll update
 ##### 저장소를 클라이언트 쪽에 분산 복제가 가능함-> 서버에 문제가 발생하더라도 Client쪽에 분산 복제된 Repo.를 사용하여 원상태로 복원 가능함
 ##### 변경 내역을 변경 후 Commit을 하게되면 로컬 Repo.에 저장됨
 ##### 타인과의 공유가 필요할 경우에 서버에 Push를 하기에 Network Overhead가 적음
+
+
+
 
 ## RCS(Revision Control System)(CVS, SVN)
 
