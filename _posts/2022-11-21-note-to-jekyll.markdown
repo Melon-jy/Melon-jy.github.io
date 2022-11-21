@@ -398,6 +398,6 @@ ctrl + x
 [vagrant@host1 bitcamp-ncp]git status --short
 M a.txt
 ?? b.txt
-
+[vagrant@host1 bitcamp-ncp]
 ```
 
