@@ -352,9 +352,7 @@ gradle-app.setting
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,gradle,java,visualstudiocode,eclipse
 
-ctrl + o
-Enter
-ctrl + x
+ctrl + o Enter ctrl + x
 [vagrant@host1 bitcamp-ncp]cat .gitignore
 ```
 ## git clone 이미 했다는 가정하에 
@@ -365,17 +363,16 @@ ctrl + x
 [vagrant@host1 bitcamp-ncp]ls
 [vagrant@host1 bitcamp-ncp]ls -al
 [vagrant@host1 bitcamp-ncp]nano a.txt
-1111
-ctrl + o
-enter
-ctrl + x
+1111 ctrl + o enter ctrl + x
 [vagrant@host1 bitcamp-ncp]git status
 [vagrant@host1 bitcamp-ncp]git status --short
 [vagrant@host1 bitcamp-ncp]git add .gitignore
 [vagrant@host1 bitcamp-ncp]git status --short
 ```
 * git status - 작업 파일의 상태
-* ~/git/bitcamp-ncp/.git/.gitignore/a.txt
+* ~/git/bitcamp-ncp/.git/
+*                        /.gitignore
+*                        /a.txt
 * (Repo.)모든 저장소(main)은 변경 내역을 관리하는 기본 트랙을 갖고있다
 * 뒤에 --short를 붙혀 간략하여 볼 수 있음
 * git add .gitignore 를 하는 순간 A  .gitignore ?? a.txt로 표시됨을 확인할 수 있다 A, ? : staging area 상태 ? -untracked
@@ -383,28 +380,100 @@ ctrl + x
 ```
 [vagrant@host1 bitcamp-ncp]git commit -m "1com"
 [vagrant@host1 bitcamp-ncp]nano b.txt
-1111
-ctrl + o
-enter
-ctrl + x
+1111 ctrl + o enter ctrl + x
 [vagrant@host1 bitcamp-ncp]git status --short
 [vagrant@host1 bitcamp-ncp]git commit -m "2com"
 [vagrant@host1 bitcamp-ncp]git status --short
 [vagrant@host1 bitcamp-ncp]nano a.txt
-2222
-ctrl + o
-enter
-ctrl + x
+2222 ctrl + o enter ctrl + x
 [vagrant@host1 bitcamp-ncp]git status --short
 M a.txt
 ?? b.txt
 [vagrant@host1 bitcamp-ncp]git add b.txt
 [vagrant@host1 bitcamp-ncp]git status --short
- M a.txt
-A  b.txt
+( M a.txt)
+(A  b.txt)
 [vagrant@host1 bitcamp-ncp]git commit -m "3com"
 [vagrant@host1 bitcamp-ncp]git status --short
- M a.txt
-[vagrant@host1 bitcamp-ncp]
+( M a.txt)
+[vagrant@host1 bitcamp-ncp]nano b.txt
+2222 ctrl + o enter ctrl + x
+[vagrant@host1 bitcamp-ncp]git status --short
+[vagrant@host1 bitcamp-ncp]git add a.txt
+[vagrant@host1 bitcamp-ncp]git status --short
+[vagrant@host1 bitcamp-ncp]git commit -m "4com"
+[vagrant@host1 bitcamp-ncp]git add b.txt
+[vagrant@host1 bitcamp-ncp]git status --short
+[vagrant@host1 bitcamp-ncp]nano b.txt
+3333 ctrl + o enter ctrl + x
+[vagrant@host1 bitcamp-ncp]git status --short
+[vagrant@host1 bitcamp-ncp]git commit -m "5com"
+[vagrant@host1 bitcamp-ncp]git status --short
+[vagrant@host1 bitcamp-ncp]git add b.txt
+[vagrant@host1 bitcamp-ncp]git commit -m "6com"
+[vagrant@host1 bitcamp-ncp]git log
+
+```
+* 영국 표준 시간으로 표시
+
+## commit hash 값
+
+* 각 commit을 구분하기 위한 식별자
+* a.txt b.txt c.txt 의 변경 내용에 대한 hash 알고리즘(계산) 연산 수행으로 나온 결과 값을 hash code 라고 한다.
+* 데이터의 크기에 상관없이 256bit, 512bit, 1024bit, 등의 정수 값이다
+* 데이터를 입력받아 hash 값을 리턴하는 수학 공식
+* 데이터의 크기가 커지면 비교 횟수도 많아지고 그만큼 속도가 느려진다.
+* 그것을 해결하기 위해 데이터 식별 ID를 사용함
+* MD4 MD5 SHA-1 SHA-256 SHA-512 에 대해 공부
+* 파일 공유 및 분산 다운로드
+
+## 디지털 지문 사용 예시
+
+* 파일 검증할 경우
+* hash 계산을 통해 hash 값(hash code)을 공지함.
+* 256, 512, 1024bit 데이터의 크기에 상관없이 등의 정수값
+* tomcat download
+
+```
+c:|User|username>certutil -hashfile apache-tomcat-9.0.69.zip sha512
+```
+* Hash Value = "데이터 식별자로 사용함" - 디지털 지문이라고 야기함
+* 데이터 구분 or 데이터 위변조 검사시 사용
+* git도 이것을 사용함
+* 변경 내용이 있고 aaa 해쉬값이 있을경우 내용을 다시 수정한다면 aab와 같이 재계산된 값이 나타남
+* Commit 한 이후에 변경 내용을 바꿀 수 없음 = 삽입한 해킹 코드를 제거하거나 잘못을 감추기 위해 변경 안한 것처럼 만듦
+
+```
+[vagrant@host1 bitcamp-ncp]git log -p -2
+[vagrant@host1 bitcamp-ncp]git log --oneline
+[vagrant@host1 bitcamp-ncp]git log --oneline --graph --all
+```
+git pro2 목차 1~3 페이지 요약본..
+
+```
+             working directory| staging Area | .git directory(Repository
+     [untracked][unmodified][modified]|[staged]|[committed]
 ```
 
+
+<br><br><br>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://melonweb.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
