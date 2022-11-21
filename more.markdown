@@ -3,9 +3,7 @@ layout: page
 title: Career
 premalink: /Career/
 ---
-
-<span style="font-size:26px;">
-
+# 경력 및 수상경력
 * MBTI : INFJ-T
 * 평택시 청소년 2011 가요제 동상
 * 배틀그라운드 2019 Region of Championship 국가대표 선발전 Team.BAMM 은상
@@ -14,4 +12,3 @@ premalink: /Career/
 * 발로란트 2021 ShotVal전 8강전 Team.ING[I Need Girlfriend]
 * 이스포츠랩 아카데미 Valorant 코치 2021.04~2022.10
 * 오산대학교 2022여름캠프 Valorant 담당교수
-</span>
