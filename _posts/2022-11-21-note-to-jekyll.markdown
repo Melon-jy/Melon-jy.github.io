@@ -86,10 +86,12 @@ categories: jekyll update
  git config -l
  git config -list
  ```
+ <br>
 
  ## git 사용법
 
- ### 1)Local git 저장소 만들기
+ ### Local git 저장소 만들기
+
 
 ```
 [vagrant@host1~]cd git
@@ -100,9 +102,9 @@ categories: jekyll update
 ```
 * 저장소로 사용할 디렉토리 생성
 * git 저장소 디렉토리로 만든다
-* 
 
 ## 파일 탐색 tree, nano, git 만들기
+
 ```
 sudo yum install -y git
 sudo yum install -y nano
