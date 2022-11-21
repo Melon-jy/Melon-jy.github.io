@@ -86,3 +86,318 @@ categories: jekyll update
  git config -l
  git config -list
  ```
+
+ ## git 사용법
+
+ ### 1)Local git 저장소 만들기
+
+```
+[vagrant@host1~]cd git
+[vagrant@host1 git]mkdir bitcamp-ncp
+[vagrant@host1 git]cd git/bitcamp-ncp
+[vagrant@host1 bitcamp-ncp]git init
+[vagrant@host1 bitcamp-ncp]ls -al
+```
+* 저장소로 사용할 디렉토리 생성
+* git 저장소 디렉토리로 만든다
+* 
+
+## 파일 탐색 tree, nano, git 만들기
+```
+sudo yum install -y git
+sudo yum install -y nano
+sudo yum install -y tree
+```
+
+### git으로 관리하지 않을 파일 지정하는 법
+
+```
+[vagrant@host1 bitcamp-ncp]vi .gitignore
+# .gitignore
+esc
+shift+:
+wq
+Enter
+[vagrant@host1 bitcamp-ncp]cat .gitignore
+[vagrant@host1 bitcamp-ncp]sudo yum install -y nano
+```
+
+# .gitignore File
+
+* git 저장소에 보관하지 않을 대상을 지정하는 것이.gitignore File
+* ex)도구를 실행할 때 마다 자동 생성하는 파일 및 폴더 (.class, exe, bin/, build/)
+* 기존 프로젝트 저장소에 설정된 파일을 가져와서 편집하는 것이 best
+* .gitignore File을 자동 생성해 주는 사이트를 이용하는 것
+
+* gitignore.io는 gitignore 자동 생성 사이트 주소
+* Windows, macOS, Linux, Gradle, Java, VisualStudioCode, Eclipse, (제외 해야하는 파일을 모르는 경우 기존 회사의 프로젝터에게 복사해서 붙혀넣기) 
+
+```
+[vagrant@host1 bitcamp-ncp]nano .gitignore
+
+# Created by https://www.toptal.com/developers/gitignore/api/windows,macos,linux,gradle,java,visualstudiocode,eclipse
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,linux,gradle,java,visualstudiocode,eclipse
+
+### Eclipse ###
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
+.cproject
+
+# CDT- autotools
+.autotools
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
+
+# Annotation Processing
+.apt_generated/
+.apt_generated_test/
+
+# Scala IDE specific (Scala & Java development for Eclipse)
+.cache-main
+.scala_dependencies
+.worksheet
+
+# Uncomment this line if you wish to ignore the project description file.
+# Typically, this file would be tracked if it contains build/dependency configurations:
+#.project
+
+### Eclipse Patch ###
+# Spring Boot Tooling
+.sts4-cache/
+
+### Java ###
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+replay_pid*
+
+### Linux ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### macOS Patch ###
+# iCloud generated files
+*.icloud
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+### Gradle ###
+.gradle
+**/build/
+!src/**/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Avoid ignore Gradle wrappper properties
+!gradle-wrapper.properties
+
+# Cache of project
+.gradletasknamecache
+
+# Eclipse Gradle plugin generated files
+# Eclipse Core
+.project
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+### Gradle Patch ###
+# Java heap dump
+*.hprof
+
+# End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,gradle,java,visualstudiocode,eclipse
+
+ctrl + o
+Enter
+ctrl + x
+[vagrant@host1 bitcamp-ncp]cat .gitignore
+```
+## git clone 이미 했다는 가정하에 
+
+## git add(file)
+
+```
+[vagrant@host1 bitcamp-ncp]ls
+[vagrant@host1 bitcamp-ncp]ls -al
+[vagrant@host1 bitcamp-ncp]nano a.txt
+1111
+ctrl + o
+enter
+ctrl + x
+[vagrant@host1 bitcamp-ncp]git status
+[vagrant@host1 bitcamp-ncp]git status --short
+[vagrant@host1 bitcamp-ncp]git add .gitignore
+[vagrant@host1 bitcamp-ncp]git status --short
+```
+* git status - 작업 파일의 상태
+* ~/git/bitcamp-ncp/.git/.gitignore/a.txt
+* (Repo.)모든 저장소(main)은 변경 내역을 관리하는 기본 트랙을 갖고있다
+* 뒤에 --short를 붙혀 간략하여 볼 수 있음
+* git add .gitignore 를 하는 순간 A  .gitignore ?? a.txt로 표시됨을 확인할 수 있다 A, ? : staging area 상태 ? -untracked
+
+```
+[vagrant@host1 bitcamp-ncp]git commit -m "1com"
+[vagrant@host1 bitcamp-ncp]nano b.txt
+1111
+ctrl + o
+enter
+ctrl + x
+[vagrant@host1 bitcamp-ncp]git status --short
+[vagrant@host1 bitcamp-ncp]git commit -m "2com"
+[vagrant@host1 bitcamp-ncp]git status --short
+[vagrant@host1 bitcamp-ncp]nano a.txt
+2222
+ctrl + o
+enter
+ctrl + x
+[vagrant@host1 bitcamp-ncp]git status --short
+M a.txt
+?? b.txt
+
+```
+
