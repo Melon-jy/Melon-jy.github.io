@@ -139,7 +139,7 @@ exit : Q
 
 * 현재 브랜치의 커밋에 다른 브랜치의 커밋 내용을 합친다.
 
-### Fast-Forward
+## Fast-Forward
 
 * merge가 단순할 경우엔 Fast Forward가 쉽다.
 * 로컬에 있는 이전 버전이 서버의 버전 순서와 같을 경우 합치기 쉽다.
@@ -200,7 +200,7 @@ exit : Q
 * git을 만든 이가 최대한 branch를 사용하라고 하였다.
 * 그만큼 많이 유용하다
 
-## Fast Forward가 발생하지 않는 경우
+### Fast Forward가 발생하지 않는 경우
 
 * 작업중인 것이 있을 경우엔 git pull이 불가능
 ```
@@ -229,7 +229,7 @@ exit : Q
 * 만약 이러한 기능이 없었더라면 1 2 3 4 5인의 사람이 같은 파일을 서로 다른 작업을 했을때 타인의 정보가 날아갈 수도 있지만 그러한 부분을 막아주며 동시에 수정을 하더라도 되돌릴 수 있는 프로그램이기 때문에 아주아주아주 효율적이며 아주아주아주 매력적인 기능
 * merge시 충돌이 일어났다면 충돌이 일어난 부분을 확인한 후 편집한 다음 add . commit 하고 push pull
 
-## 개발하는 동안 사용할 git Branch
+### 개발하는 동안 사용할 git Branch
 
 * HEAD의 등장 - 현재 작업 중인 Branch를 가르킨다
 * 다음 명령어로 새 Branch를 생성하고 삭제한다.
@@ -244,24 +244,65 @@ exit : Q
 [vagrant@host1 bitcamp-ncp]git log --oneline
 ```
 
-## Branch CheckOut하기
+### Branch CheckOut하기
 
 * b1 branch를 생성 후 b1 branch를 checkout하여 HEAD가 b1 branch를 가르키게 하기.
 * 24번 과정을/bitcamp-ncp/.git/ 에서 bitcamp-ncp/로 작업 디렉토리를 꺼냈을때
 * git checkout b1 명령어를 줄 경우 HEAD가 main에서 b1으로 바뀜
 * 그럴 경우 main에서 꺼낸 것은 다 삭제되고 b1에서 나온 디렉토리로 다시 꺼냄
+* 그 branch의 마지막 버전 혹은 특정 버전을 꺼낼 수 있음[#코드를 입력할 경우]
 
 ```
 [vagrant@host1 bitcamp-ncp]git branch b1
 [vagrant@host1 bitcamp-ncp]git checkout b1
 [vagrant@host1 bitcamp-ncp]git branch
 [vagrant@host1 bitcamp-ncp]git log --oneline
-[vagrant@host1 bitcamp-ncp]
-[vagrant@host1 bitcamp-ncp]
-[vagrant@host1 bitcamp-ncp]
-[vagrant@host1 bitcamp-ncp]
-[vagrant@host1 bitcamp-ncp]
+[vagrant@host1 bitcamp-ncp]ls
+[vagrant@host1 bitcamp-ncp]rm -d a.txt
+[vagrant@host1 bitcamp-ncp]nano c.txt
+[vagrant@host1 bitcamp-ncp]git checkout main
+[vagrant@host1 bitcamp-ncp]ls
 ```
+
+### branch - merge
+
+* 현재 branch의 commit을 다른 branch의 commit에 합치는 것
+* 27번이 생기지 않는 이유는 main의 24번은 b1의 분기 이후에 변경된 적이 없어, b1브랜치의 버전을 main 24번 이후에 그대로 이어 붙혀도 문제가 되지 않는다.
+* 새로운 napshot을 만들지 않는다.
+* 한번 main과 합친경우 새로 생성한 브랜치를 지우고 새로 만들어서 작업해야 충돌이 안남
+
+
+```
+[vagrant@host1 bitcamp-ncp]git checkout main
+[vagrant@host1 bitcamp-ncp]git merge b1
+[vagrant@host1 bitcamp-ncp]git branch -d b1
+[vagrant@host1 bitcamp-ncp]git branch
+[vagrant@host1 bitcamp-ncp]git log --oneline
+```
+* 새로 생성한 브랜치는 작업 이후 pull 하고 삭제 후 다시 생성해서
+* 
+* 
+
+```
+[vagrant@host2 bitcamp-ncp]git branch x1
+[vagrant@host2 bitcamp-ncp]git checkout x1
+[vagrant@host2 bitcamp-ncp]git branch
+[vagrant@host2 bitcamp-ncp]nano x.txt
+[vagrant@host2 bitcamp-ncp]git add .
+[vagrant@host2 bitcamp-ncp]git commit -m "41"
+[vagrant@host2 bitcamp-ncp]nano x.txt
+[vagrant@host2 bitcamp-ncp]git add .
+[vagrant@host2 bitcamp-ncp]git commit -m "42"
+[vagrant@host2 bitcamp-ncp]git checkout main
+[vagrant@host2 bitcamp-ncp]git merge x1
+[vagrant@host2 bitcamp-ncp]git log --oneline
+[vagrant@host2 bitcamp-ncp]git pull
+[vagrant@host2 bitcamp-ncp]git push
+[vagrant@host2 bitcamp-ncp]git branch x1
+```
+
+
+
 
 <br><br><br>
 
