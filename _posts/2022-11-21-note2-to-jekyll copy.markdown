@@ -299,6 +299,7 @@ exit : Q
 [vagrant@host2 bitcamp-ncp]git pull
 [vagrant@host2 bitcamp-ncp]git push
 [vagrant@host2 bitcamp-ncp]git branch -d x1
+[vagrant@host2 bitcamp-ncp]git branch
 ```
 
 ## git 작업 순서
