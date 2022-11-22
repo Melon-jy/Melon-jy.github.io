@@ -226,8 +226,42 @@ exit : Q
 ```
 * 오류부터 오류 수정까지 내용.
 * 서로 같은 파일을 동시에 push 할 경우 두 기록이 모두 저장되며 직접 a.txt 파일로 들어가 어느 것을 어떻게 수정할 것인지 수작업으로 직접 편집할 수 있고 편집 이후 다시 commit하여 충돌이 일어난 부분을 해결할 수 있음
+* 만약 이러한 기능이 없었더라면 1 2 3 4 5인의 사람이 같은 파일을 서로 다른 작업을 했을때 타인의 정보가 날아갈 수도 있지만 그러한 부분을 막아주며 동시에 수정을 하더라도 되돌릴 수 있는 프로그램이기 때문에 아주아주아주 효율적이며 아주아주아주 매력적인 기능
+* merge시 충돌이 일어났다면 충돌이 일어난 부분을 확인한 후 편집한 다음 add . commit 하고 push pull
 
+## 개발하는 동안 사용할 git Branch
 
+* HEAD의 등장 - 현재 작업 중인 Branch를 가르킨다
+* 다음 명령어로 새 Branch를 생성하고 삭제한다.
+
+```
+[vagrant@host1 bitcamp-ncp]git branch
+[vagrant@host1 bitcamp-ncp]git branch b1
+[vagrant@host1 bitcamp-ncp]git branch
+[vagrant@host1 bitcamp-ncp]git log --oneline
+[vagrant@host1 bitcamp-ncp]git branch -d b1
+[vagrant@host1 bitcamp-ncp]git branch
+[vagrant@host1 bitcamp-ncp]git log --oneline
+```
+
+## Branch CheckOut하기
+
+* b1 branch를 생성 후 b1 branch를 checkout하여 HEAD가 b1 branch를 가르키게 하기.
+* 24번 과정을/bitcamp-ncp/.git/ 에서 bitcamp-ncp/로 작업 디렉토리를 꺼냈을때
+* git checkout b1 명령어를 줄 경우 HEAD가 main에서 b1으로 바뀜
+* 그럴 경우 main에서 꺼낸 것은 다 삭제되고 b1에서 나온 디렉토리로 다시 꺼냄
+
+```
+[vagrant@host1 bitcamp-ncp]git branch b1
+[vagrant@host1 bitcamp-ncp]git checkout b1
+[vagrant@host1 bitcamp-ncp]git branch
+[vagrant@host1 bitcamp-ncp]git log --oneline
+[vagrant@host1 bitcamp-ncp]
+[vagrant@host1 bitcamp-ncp]
+[vagrant@host1 bitcamp-ncp]
+[vagrant@host1 bitcamp-ncp]
+[vagrant@host1 bitcamp-ncp]
+```
 
 <br><br><br>
 
