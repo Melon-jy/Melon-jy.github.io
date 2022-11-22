@@ -11,7 +11,14 @@ categories: jekyll update
 
 * 이럴 때, 여러 개발자들이 동시에 다양한 작업을 할 수 있게 만들어 주는 기능이 바로 '브랜치(Branch)' 입니다. 각자 독립적인 작업 영역(저장소) 안에서 마음대로 소스코드를 변경할 수 있지요. 이렇게 분리된 작업 영역에서 변경된 내용은 나중에 원래의 버전과 비교해서 하나의 새로운 버전으로 만들어 낼 수 있습니다.
 
+<img src="https://github.com/Melon-jy/Melon-jy.github.io/blob/main/baranch1.png?raw=true" width="200">
+
+[이미지 출처]("https://backlog.com/git-tutorial/kr/stepup/stepup1_1.html")
 ```
+[vagrant@host bitcamp-ncp]sudo yum install http://opensource.wandisco.com/centos/7/git/x86_64/wandisco-git-release-7-1.noarch.rpm
+[vagrant@host bitcamp-ncp]sudo yum remove git
+[vagrant@host bitcamp-ncp]sudo yum install git
+[vagrant@host bitcamp-ncp]git --version
 [vagrant@host bitcamp-ncp]git log --oneline
 [vagrant@host bitcamp-ncp]file .gitignore
 [vagrant@host bitcamp-ncp]less .gitignore
@@ -70,7 +77,6 @@ exit : Q
 [vagrant@host bitcamp-ncp]can b.txt
 [vagrant@host bitcamp-ncp]git checkout b.txt
 [vagrant@host bitcamp-ncp]cat b.txt
-[vagrant@host bitcamp-ncp]
 ```
 * git checkout을 하여 unmodified 상태로 되돌리기
 * 원래 저장소에 있던 상태로 되돌리는 것을 checkout이라 함
@@ -78,6 +84,33 @@ exit : Q
 * 작업 디렉토리에 파일을 변경한 후 변경 전으로 되돌리는 것이 checkout
 * git add(staging area)를 하게되면 이미 넘긴 상태라 checkout으로 되돌릴 수 없음
 
+
+```
+[vagrant@host bitcamp-ncp]nano b.txt
+[vagrant@host bitcamp-ncp]git status --short
+[vagrant@host bitcamp-ncp]cat b.txt
+[vagrant@host bitcamp-ncp]git checkout b.txt
+[vagrant@host bitcamp-ncp]cat b.txt
+[vagrant@host bitcamp-ncp]git log --oneline --graph --all
+
+```
+
+### HEAD와 Branch
+
+* 서버 저장소 Main Branch : server에 푸쉬할 때마다 1번 저장소에서 4번 저장소로 HEAD(작업Branch)가 넘어감
+* add를 해서 checkout이 안될 경우 reset을 통해 HEAD상태로 되돌린 후 checkout을 할 수 있음
+
+```
+[vagrant@host bitcamp-ncp]git status --short
+[vagrant@host bitcamp-ncp]cat b.txt
+[vagrant@host bitcamp-ncp]git reset HEAD b.txt
+[vagrant@host bitcamp-ncp]git status --short
+[vagrant@host bitcamp-ncp]git checkout b.txt
+[vagrant@host bitcamp-ncp]cat b.txt
+[vagrant@host bitcamp-ncp]
+[vagrant@host bitcamp-ncp]
+[vagrant@host bitcamp-ncp]
+```
 
 <br><br><br>
 
