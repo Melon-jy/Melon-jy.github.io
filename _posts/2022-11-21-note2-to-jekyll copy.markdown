@@ -298,9 +298,13 @@ exit : Q
 [vagrant@host2 bitcamp-ncp]git log --oneline
 [vagrant@host2 bitcamp-ncp]git pull
 [vagrant@host2 bitcamp-ncp]git push
-[vagrant@host2 bitcamp-ncp]git branch x1
+[vagrant@host2 bitcamp-ncp]git branch -d x1
 ```
 
+## git 작업 순서
+
+* server main branch(1) -> clone in local -> local main branch(1) -> branch생성 -> (2) -> (3) -> main branch로 merge -> 결과 확인
+* server main branch(1) -> (21) -> (22) -> (23) -> pull -> local merge (24) -> server에 push -> server와 local에 결과 확인 후 branch 삭제
 
 
 
