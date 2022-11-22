@@ -181,8 +181,6 @@ exit : Q
 [vagrant@host1 bitcamp-ncp]git push
 ```
 
-* Fast Forward가 발생하지 않는 경우
-
 ```
 [vagrant@host2 bitcamp-ncp]nano a.txt
 [vagrant@host2 bitcamp-ncp]git add .
@@ -201,6 +199,35 @@ exit : Q
 * git pull은 git fetch와 git merge를 합친 것이다.
 * git을 만든 이가 최대한 branch를 사용하라고 하였다.
 * 그만큼 많이 유용하다
+
+## Fast Forward가 발생하지 않는 경우
+
+* 작업중인 것이 있을 경우엔 git pull이 불가능
+```
+[vagrant@host1 bitcamp-ncp]git pull
+[vagrant@host2 bitcamp-ncp]git pull
+[vagrant@host1 bitcamp-ncp]git log --oneline --graph --all
+[vagrant@host2 bitcamp-ncp]git log --oneilne --graph --all
+[vagrant@host1 bitcamp-ncp]nano a.txt
+[vagrant@host2 bitcamp-ncp]nano a.txt
+[vagrant@host1 bitcamp-ncp]git add .
+[vagrant@host1 bitcamp-ncp]git commit -m "22"
+[vagrant@host1 bitcamp-ncp]git push
+[vagrant@host2 bitcamp-ncp]git add .
+[vagrant@host2 bitcamp-ncp]git commit -m "23"
+[vagrant@host2 bitcamp-ncp]git push
+[vagrant@host1 bitcamp-ncp]nano a.txt
+[vagrant@host1 bitcamp-ncp]git add .
+[vagrant@host1 bitcamp-ncp]git commit -m "24"
+[vagrant@host1 bitcamp-ncp]git push
+[vagrant@host2 bitcamp-ncp]git pull
+[vagrant@host1 bitcamp-ncp]git log --oneline --graph --all
+[vagrant@host2 bitcamp-ncp]git log --oneline --graph --all
+```
+* 오류부터 오류 수정까지 내용.
+* 서로 같은 파일을 동시에 push 할 경우 두 기록이 모두 저장되며 직접 a.txt 파일로 들어가 어느 것을 어떻게 수정할 것인지 수작업으로 직접 편집할 수 있고 편집 이후 다시 commit하여 충돌이 일어난 부분을 해결할 수 있음
+
+
 
 <br><br><br>
 
