@@ -11,10 +11,10 @@ categories: jekyll update
 
 * 이럴 때, 여러 개발자들이 동시에 다양한 작업을 할 수 있게 만들어 주는 기능이 바로 '브랜치(Branch)' 입니다. 각자 독립적인 작업 영역(저장소) 안에서 마음대로 소스코드를 변경할 수 있지요. 이렇게 분리된 작업 영역에서 변경된 내용은 나중에 원래의 버전과 비교해서 하나의 새로운 버전으로 만들어 낼 수 있습니다.
 
-<img src="https://github.com/Melon-jy/Melon-jy.github.io/blob/main/baranch1.png?raw=true" width="200">
+<img src="https://github.com/Melon-jy/Melon-jy.github.io/blob/main/baranch1.png?raw=true" width="400">
 
 
-<img src="https://github.com/Melon-jy/Melon-jy.github.io/blob/main/branch2.png?raw=true" width="200">
+<img src="https://github.com/Melon-jy/Melon-jy.github.io/blob/main/branch2.png?raw=true" width="400">
 
 
 
@@ -122,12 +122,81 @@ exit : Q
 [vagrant@host bitcamp-ncp]git add .
 [vagrant@host bitcamp-ncp]git commit -m "11"
 [vagrant@host bitcamp-ncp]git log --oneline --graph --all
+[vagrant@host bitcamp-ncp]git push
+```
+
+## host2 사용
+
+```
+[vagrant@host2 bitcamp-ncp]git pull
+[vagrant@host1 bitcamp-ncp]nano a.txt
+[vagrant@host1 bitcamp-ncp]git log --oneline --graph --all
+[vagrant@host2 bitcamp-ncp]git fetch
+[vagrant@host2 bitcamp-ncp]
+```
+
+## git merge [브랜치 이름]
+
+* 현재 브랜치의 커밋에 다른 브랜치의 커밋 내용을 합친다.
+
+### Fast-Forward
+
+* merge가 단순할 경우엔 Fast Forward가 쉽다.
+* 로컬에 있는 이전 버전이 서버의 버전 순서와 같을 경우 합치기 쉽다.
+* 그대로 이어 붙히고 HEAD를 마지막 version으로 이동시키면 된다.
+
+```
+[vagrant@host2 bitcamp-ncp]git merge
+[vagrant@host1 bitcamp-ncp]nano a.txt
+[vagrant@host1 bitcamp-ncp]git add .
+[vagrant@host1 bitcamp-ncp]git commit -m "13"
+[vagrant@host1 bitcamp-ncp]git push
+[vagrant@host1 bitcamp-ncp]nano a.txt
+[vagrant@host1 bitcamp-ncp]git add .
+[vagrant@host1 bitcamp-ncp]git commit -m "14"
+[vagrant@host1 bitcamp-ncp]git push
+[vagrant@host1 bitcamp-ncp]nano a.txt
+[vagrant@host1 bitcamp-ncp]git add .
+[vagrant@host1 bitcamp-ncp]git commit -m "15"
+[vagrant@host1 bitcamp-ncp]git push
+[vagrant@host1 bitcamp-ncp]nano a.txt
+[vagrant@host1 bitcamp-ncp]git add .
+[vagrant@host1 bitcamp-ncp]git commit -m "16"
+[vagrant@host1 bitcamp-ncp]git push
+[vagrant@host2 bitcamp-ncp]git fetch
+[vagrant@host2 bitcamp-ncp]git log --oneline --graph --all
+[vagrant@host2 bitcamp-ncp]git merge
+[vagrant@host2 bitcamp-ncp]git log --oneline --graph --all
 ```
 
 
+```
+[vagrant@host1 bitcamp-ncp]nano b.txt
+[vagrant@host1 bitcamp-ncp]git add .
+[vagrant@host1 bitcamp-ncp]git commit -m "17"
+[vagrant@host1 bitcamp-ncp]nano b.txt
+[vagrant@host1 bitcamp-ncp]git add .
+[vagrant@host1 bitcamp-ncp]git commit -m "18"
+[vagrant@host1 bitcamp-ncp]git log --oneline --graph --all
+[vagrant@host1 bitcamp-ncp]git push
+```
 
+* Fast Forward가 발생하지 않는 경우
 
-
+```
+[vagrant@host2 bitcamp-ncp]nano a.txt
+[vagrant@host2 bitcamp-ncp]git add .
+[vagrant@host2 bitcamp-ncp]git commit -m "19"
+[vagrant@host2 bitcamp-ncp]nano a.txt
+[vagrant@host2 bitcamp-ncp]git add .
+[vagrant@host2 bitcamp-ncp]git commit -m "20"
+[vagrant@host2 bitcamp-ncp]git log --oneline --graph --all
+[vagrant@host2 bitcamp-ncp]git fetch
+[vagrant@host2 bitcamp-ncp]git log --oneline --graph --all
+[vagrant@host2 bitcamp-ncp]git merge
+[vagrant@host2 bitcamp-ncp]git log --oneline --graph --all
+[vagrant@host1 bitcamp-ncp]git pull
+```
 
 
 <br><br><br>
