@@ -5,12 +5,22 @@ date:   2022-11-22 09:40:33 +0900
 categories: jekyll update
 ---
 
-# branch
+# VM branch
 
+```
+[vagrant@host bitcamp-ncp]git log --oneline
+[vagrant@host bitcamp-ncp]file .gitignore
+[vagrant@host bitcamp-ncp]less .gitignore
+next page : space bar
+exit : Q
+[vagrant@host bitcamp-ncp]mkdir tmp
+[vagrant@host tmp]touch hello.txt
+[vagrant@host tmp]ls -al
+[vagrant@host tmp]
+```
 
-
-
-
+* Unix에서는 file로 다룸
+* ex) 파일 -> Data, 파일 -> 디렉토리, 파일 ->
 
 <br><br><br>
 
