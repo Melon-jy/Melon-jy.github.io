@@ -13,6 +13,11 @@ categories: jekyll update
 
 <img src="https://github.com/Melon-jy/Melon-jy.github.io/blob/main/baranch1.png?raw=true" width="200">
 
+
+<img src="https://github.com/Melon-jy/Melon-jy.github.io/blob/main/branch2.png?raw=true" width="200">
+
+
+
 [이미지 출처]("https://backlog.com/git-tutorial/kr/stepup/stepup1_1.html")
 ```
 [vagrant@host bitcamp-ncp]sudo yum install http://opensource.wandisco.com/centos/7/git/x86_64/wandisco-git-release-7-1.noarch.rpm
@@ -107,10 +112,23 @@ exit : Q
 [vagrant@host bitcamp-ncp]git status --short
 [vagrant@host bitcamp-ncp]git checkout b.txt
 [vagrant@host bitcamp-ncp]cat b.txt
-[vagrant@host bitcamp-ncp]
-[vagrant@host bitcamp-ncp]
-[vagrant@host bitcamp-ncp]
 ```
+
+## git 원격 저장소 정보 출력
+
+```
+[vagrant@host bitcamp-ncp]git remote -v
+[vagrant@host bitcamp-ncp]git remote show origin
+[vagrant@host bitcamp-ncp]git add .
+[vagrant@host bitcamp-ncp]git commit -m "11"
+[vagrant@host bitcamp-ncp]git log --oneline --graph --all
+```
+
+
+
+
+
+
 
 <br><br><br>
 
