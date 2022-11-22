@@ -198,6 +198,9 @@ exit : Q
 [vagrant@host1 bitcamp-ncp]git pull
 ```
 
+* git pull은 git fetch와 git merge를 합친 것이다.
+* git을 만든 이가 최대한 branch를 사용하라고 하였다.
+* 그만큼 많이 유용하다
 
 <br><br><br>
 
