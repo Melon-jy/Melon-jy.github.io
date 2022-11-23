@@ -83,6 +83,8 @@ categories: jekyll update
 * I18N : Internationnalization
 * L10N : Localization
 
+---
+
 
 <br><br><br>
 
