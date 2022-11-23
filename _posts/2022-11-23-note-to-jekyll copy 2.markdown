@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "오전 과제1"
+title:  "리눅스 기본 명령어"
 date:   2022-11-23 09:40:33 +0900
 categories: jekyll update
 ---
