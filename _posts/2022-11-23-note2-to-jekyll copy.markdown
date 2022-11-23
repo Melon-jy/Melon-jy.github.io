@@ -52,26 +52,6 @@ categories: jekyll update
 
 * 1994년 Tim Berners Lee는 미국 MIT에서 월드 와이드 웹 컨소시엄을 설립하고 모든 웹 표준과 가이드 라인을 제시하고 있다. 이와 함께 W3의 모든 특허를 누구나 무료로 사용할 수 있도록 공개했으며, 현재는 W3C의 이사로 활동하며 정부 데이터의 국민성을 높이기 위해 영국 정부와 함께 일하고 있다.
 
----
-
-### HTML의 기본 구조
-
-* Element Tag : !docttype-html, HTML, Head, /Head, Body, /Body, /HTML
-* br뒤에 / 를 넣으면 끝 Tag그 생략 표시
-* Element Tag에서 생략해도 되는 Tag는 p, br 이 있음
-* meta의 경우 Tag를 끝맺지 않아야 함
-* 자바의 경우 대소문자를 명확히 적어야함
-* HTML은 그렇지 않음
-* Photoshop 을 쓰는 사람을 웹디자이너(그림,아이콘)
-* HTML, CSS, JavaScript의 기본을 쓰는 사람이 웹퍼블리셔(화면)
-* HTML, CSS, JavaScript, UI FrameWork를 다루는 사람을 Front-end 개발자 (Client app UI)
-
-* Sementic
-
-<img src="https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png" alt="HTML 5 Cheat Sheets - An Infographic from " width="100%" class="infographic_embedder" /><p class="infographic_attr">Embedded from <a href="https://html.com/blog/html-5-cheat-sheets/" target="_blank"></a></p>
-
-
-
 
 <br><br><br>
 
