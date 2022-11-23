@@ -67,9 +67,21 @@ categories: jekyll update
 
 * Sementic
 
+* div Tag를 -> Sementic Tag : ex) section, article, aside, Header, footer
+
 <img src="https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png" alt="HTML 5 Cheat Sheets - An Infographic from " width="100%" class="infographic_embedder" /><p class="infographic_attr">Embedded from <a href="https://html.com/blog/html-5-cheat-sheets/" target="_blank"></a></p>
 
-
+* HTML 공부법 -> (1)예제 확인 (2)실행 (3)결과 확인
+* !Doctype HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://___"
+* HTML(root Element) PUBLIC or System(문서 공개 여부 설정) -(사설)+(공인)
+* W3C(만든 조직의 이름 설정) 
+* DTD(문서 식별자 설정) 
+* HTML4.01(문서 이름 설정)
+* EN(문서 언어 설정)
+* http://___(문서를 정의한 DTD파일의 URL)
+* DTD <- old, Schema <- New
+* I18N : Internationnalization
+* L10N : Localization
 
 
 <br><br><br>
