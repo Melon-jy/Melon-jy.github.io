@@ -5,8 +5,6 @@ date:   2022-11-23 11:10:33 +0900
 categories: jekyll update
 ---
 
-# HTML, css 수업
-
 * 한빛미디어에서 HTML5,css 바이블3 예제 다운로드
 
 ### HTML과 HTTP 등장 전과 후
