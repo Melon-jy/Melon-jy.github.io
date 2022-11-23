@@ -1,0 +1,75 @@
+---
+layout: post
+title:  "who is make a HTTP 과제"
+date:   2022-11-23 11:10:33 +0900
+categories: jekyll update
+---
+
+# HTTP를 만든 사람
+
+* 만든 이 : Tim Berners Lee
+* 만든 단체 : 유럽 입자 물리 연구소(CERN)
+* 아이디어 : 인터넷과 W3(웹)의 결합
+* Hyper Text : 미국의 철학자 테드 넬슨이 고안한 용어
+
+* HTTP는 1989년 팀 버너스 리(Tim Berners Lee)에 의하여 처음 설계되어 인터넷을 통한 소속:월드 와이드 웹(world Wide Web)기반에서 전 세계적인 정보공유를 이루는데 큰 역할을 하였다.
+
+* 인터넷에서 HyperText 문서를 교환하기 위하여 사용되는 통신규약이다.
+
+* Hyper Text는 문서 중간중간에 특정 키워드를 두고 문자나 그림을 상호 유기적으로 결합하여 연결시킴으로써, 서로 다른 문서라 할지라도 하나의 문서인 것처럼 보이면서 참조하기 쉽도록 하는 방식을 의미한다.
+
+* HTTP의 첫번째 버전은 인터넷을 통하여 가공되지 않은 데이터를 전송하기 위한 단순한 프로토콜이였고, 데이터에 대한 전송과 요구 응답에 대한 수정 등 가공된 정보를 포함하는 프로토콜로 개선되었다.
+
+* 인터넷 주소를 지정할 때 'http://www....'와 같이 하는 것은 www로 시작되는 인터넷 주소에서 Hyper Text file의 교환을 http 통신규약으로 처리하라는 뜻이다.
+
+* WWW의 뜻은 (World Wide Web, W3라고 한다)
+* 일반적으로 W3를 웹으로 칭한다
+* HTML이라는 언어로 작성한 문서를 W3에 모아놓으면, 사용자는 링크를 통해 연결된 문서로 이동해가며 원하는 정보를 찾을 수 있다.
+
+* 이러한 문서를 흔히 'Web page'라고 부르며 Web Page를 모아놓은 것을 'Web Site'라고 한다.
+
+* Tim Berners Lee는 1955년 영국 런던에서 태어났으며, 1973년부터 1976년까지 옥스퍼드 대학에서 물리학을 전공했다.
+* 졸업 후에는 통신회사에서 기술직으로 잠깐 있다가 1980년부터 스위스에 있는 유럽 입자 물리 연구소(CERN)에서 잠깐 일하게 된다.
+* 여기서 그는 작업의 편리를 위해 한 가지 소프트웨어를 개발한다.
+* 이것이 W3의 기초가 된 인콰이어(ENQUIRE)다.
+
+* 1989년 Tim Berners Lee가 제안한 아이디어는 internet과hyper text를 결합하는 것이었다.
+
+### 최초의 웹 서버와 웹 브라우저의 탄생
+
+* 1990년 10월 CERN HTTPd라는 이름이 붙여진 최초의 웹 서버가 가동됐다.
+* 웹 서버를 만들면서 웹 페이지를 제작하고 읽을 수 있는 브라우저 WorldWideWeb(W3)도 함께 개발했다.
+* WorldWideWeb(W3)는 URL과 HTML, HTTP 등 Hyper Text 구성요소를 통해 각 컴퓨터에 담긴 정보를 쉽게 검색하고 게시할 수 있는 것이 특징이다.
+* 참고로 정보 검색 시스템인 World Wide Web과 브라우저WorldWideWeb은 띄어쓰기를 통해 구분하고, 브라우저WorldWideWeb은 나중에 혼동을 막기 위해 넥서스(Nexus)로 이름을 바꿨다.
+
+* 1990년 12월, 그가 만든 시스템을 소속내부에 공유했고, 이듬해 8월에는 온라인상에 웹 페이지 제작에 관한 모든 정보를 공개해 외부 개발자가 이 프로젝트에 참여할 수 있도록 유도했다.
+
+* 1990년 탄생한 세계 최초의 웹 사이트는 'http://info.cern.ch'이다
+
+* 이곳에 개념과 기술 그리고 소프트웨어 구조와 코드 등을 공개했다
+
+* W3의 확산 속도는 1993년 등장한 그래픽 웹 브라우저 '모자이크(Mosaic)'가 등장하면서 빨라졌고 웹 서버의 숫자도 늘어났다.
+
+* 1994년 Tim Berners Lee는 미국 MIT에서 월드 와이드 웹 컨소시엄을 설립하고 모든 웹 표준과 가이드 라인을 제시하고 있다. 이와 함께 W3의 모든 특허를 누구나 무료로 사용할 수 있도록 공개했으며, 현재는 W3C의 이사로 활동하며 정부 데이터의 국민성을 높이기 위해 영국 정부와 함께 일하고 있다.
+
+<br><br><br>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://melonweb.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

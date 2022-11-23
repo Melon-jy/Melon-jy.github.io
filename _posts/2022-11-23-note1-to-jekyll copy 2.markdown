@@ -27,9 +27,18 @@ categories: jekyll update
 * CURL, Wget = HTTP client
 * curl https://www.naver.com 을 하게되면 네이버의 화면 CMD에 출력해줌
 * Wget 은 다운로드 받아줌
-* 
 
+### HTTP Client / Server app.
 
+* HTTP Client - 클라이언트가 먼저 요청을 함
+* HTTP Server - 클라이언트의 요청에 응답 함
+* HTTP Server : NginX, Apache HTTP server 가 대표적인 Server
+* HTTP Client : chrome, Safari, Firefox, Edge 가 대표적인 Client
+* HTTP Client의 다른 이름을 Web Browser라고 함
+* HTTP Server의 다른 이름은 Web Server라고 함
+* Web의 정의: 문서들이 거미줄 처럼 얽혀있다고 하여 Web이라 표현함
+* HTTPS는 HTTP와 security가 합쳐져 웹(HTTP)+보안(S)라 HTTPS라 한다
+---
 
 
 <br><br><br>
