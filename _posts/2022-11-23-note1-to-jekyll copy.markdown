@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "비트캠프 수업"
+title:  "HTML 수업1"
 date:   2022-11-23 11:10:33 +0900
 categories: jekyll update
 ---
