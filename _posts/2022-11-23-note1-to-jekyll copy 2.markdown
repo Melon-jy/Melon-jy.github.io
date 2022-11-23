@@ -48,7 +48,10 @@ categories: jekyll update
 * (1)요청 -> (2)실행 -> (3)작업수행 -> (4)작업결과를 HTML, GIF, JPEG 등의 형태로 만들어 리턴 -> (5)응답
 
 ---
+### full-stack 개발자 종류
 
+* SI 신규 프로젝트 개발자
+* SM 프로젝트 후 유지보수 개발자
 
 
 <br><br><br>
