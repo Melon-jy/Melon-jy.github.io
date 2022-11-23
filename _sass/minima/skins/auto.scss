@@ -10,15 +10,15 @@ $color-scheme-dark: false !default;
 // Light mode
 // ----------
 
-$lm-brand-color:           #484848 !default;
+$lm-brand-color:           #9cff9c !default;
 $lm-brand-color-light:     lighten($lm-brand-color, 40%) !default;
 $lm-brand-color-dark:      darken($lm-brand-color, 25%) !default;
 
 $lm-site-title-color:      $lm-brand-color-dark !default;
 
-$lm-text-color:            #484848 !default;
-$lm-background-color:      #005c00 !default;
-$lm-code-background-color: #000000 !default;
+$lm-text-color:            #005c00 !default;
+$lm-background-color:      #999999 !default;
+$lm-code-background-color: #484848 !default;
 
 $lm-link-base-color:       #9cff9c !default;
 $lm-link-visited-color:    darken($lm-link-base-color, 15%) !default;
