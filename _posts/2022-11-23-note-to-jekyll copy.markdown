@@ -224,17 +224,93 @@ a.txt  e
 ```
 ---
 ## which
+
+* which 란
+* 특정 명령어의 위치를 찾아주는 명령어
+* -a를 옵션으로 쓸 경우 검색 가능한 모든 경로에서 해당 명령어를 찾음
+```
+[vagrant@host1 t]$ which find
+/usr/bin/find
+[vagrant@host1 t]$ which -a find
+/usr/bin/find
+```
 ---
-## man
+## man (Manual Pager Utils)
+
+* man 란
+* 각종 명령어, 프로그램의 사용법을 확인함
+```
+[vagrant@host1 t]$
+```
 ---
 ## apropos
+
+* apropos 란?
+* 지정된 키워드와 포함되어 있는 매뉴얼 페이지의 목록 정보를 출력하는 명령어로 'man -k' 명령과 동일함
+```
+[vagrant@host1 t]$ cd ..
+[vagrant@host1 bitcamp-ncp]$ apropos b.txt
+b.txt: nothing appropriate.
+[vagrant@host1 bitcamp-ncp]$ apropos t
+close (2)            - close a file descriptor
+encrypt (3)          - encrypt 64-bit messages
+environ (7)          - user environment
+fclose (3)           - close a stream
+fflush (3)           - flush a stream
+getdomainname (2)    - get/set NIS domain name
+getrlimit (2)        - get/set resource limits
+hier (7)             - description of the file system hierarchy
+lockf (3)            - apply, test or remove a POSIX lock on an open file
+updwtmp (3)          - append an entry to the wtmp file
+madvise (2)          - give advice about use of memory
+mount (2)            - mount file system
+rand (3)             - pseudo-random number generator
+
+--- 이하 생략 ---
+```
 ---
 ## info
+
+* info란
+* 리눅스 명령어의 사용 방법, 옵션 등을 나타냄
+- 명령어 man에 비해 제공되는 명령어가 한정적
+```
+[vagrant@host1 bitcamp-ncp]$ info pwd
+```
 ---
 ## whatis
+
+* whatis 란
+* 명령어에 대한 기능을 간략하게 나타냄
+* 자세한 사용법과 설명은 man, info를 통해 확인해야함
+* 완전한 키워드가 일치해야만 해당 명령어 기능을 확인할 수 있음
+* whatis 데이터 베이스에서 문자열만 검색함
+```
+[vagrant@host1 bitcamp-ncp]$ whatis pwd
+pwd (1)              - print name of current/working directory
+pwd (1p)             - return working directory name
+[vagrant@host1 bitcamp-ncp]$ whatis ls
+ls (1)               - list directory contents
+ls (1p)              - list directory contents
+```
 ---
 ## alias
----
+
+* alias란
+* alias는 별칭이라는 뜻
+* alias는 사용자가 명령어를 다른 이름으로 바꿔서 사용할 수 있는 쉘 내부 명령어를 말함
+* 이 alias를 통해서 일일이 입력하기 번거로운,  길이가 긴 명령어를 간단한 이름으로 바꿔서 등록하여 업무 효율을 높일 수 있음
+```
+[vagrant@host1 bitcamp-ncp]$ alias
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l.='ls -d .* --color=auto'
+alias ll='ls -l --color=auto'
+alias ls='ls --color=auto'
+alias which='alias | /usr/bin/which --tty-only --read-alias --show-dot --show-tilde'
+```
+
 <br><br><br>
 
 <div id="disqus_thread"></div>
