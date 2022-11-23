@@ -173,15 +173,55 @@ b.txt  c.txt  d.txt  hello2.txt  README.md  x.txt
 * 하드링크 (Hard Link)
 * 원본파일과 다른 이름으로 존재하는 동일한 파일이며 원본파일과 동일한 내용의 다른 파일이라고 할 수 있다. 그리고 하드링크에서는 원본파일과 링크파일 두개가 서로 다른 파일이기 때문에 둘 중 하나를 삭제하더라도 나머지 하나는 그대로 남아 있다. 또한 하드링크에서는 원본파일의 내용이 변경될 경우에는 링크파일의 내용 또한 자동으로 변경된다.
 
-```
+* 사용법 : ln 옵션 원본파일 대상파일
 
 ```
+[vagrant@host1 bitcamp-ncp]$ ln b.txt a.txt
+a.txt  b.txt  c.txt  d.txt  hello2.txt  README.md  x.txt
+```
 ---
-## mkdir
+## mkdir (make directory)
+
+* 디렉토리 생성
+* -p 옵션을 주면 하위 디렉토리까지 한 번에 생성 가능
+* 아래 예제중 ls -R 옵션은 디렉토리의 하위목록까지 전부 보여주는 옵션인데,
+* 내 경우 실제로 많이 사용하진 않아서 ls 명령어에서 따로 설명하진 않았다.
+* mkdir -p 옵션 예제에서 실제로 하위디렉토리가 생성되었다는 것을 보여주기 위해 사용하였다.
+```
+[vagrant@host1 bitcamp-ncp]$ ls
+a.txt  b.txt  c.txt  d.txt  hello2.txt  README.md  x.txt
+[vagrant@host1 bitcamp-ncp]$ mkdir testdir
+[vagrant@host1 bitcamp-ncp]$ ls
+a.txt  b.txt  c.txt  d.txt  hello2.txt  README.md  testdir  x.txt
+[vagrant@host1 bitcamp-ncp]$ mkdir -p t/e/s/ts
+[vagrant@host1 bitcamp-ncp]$ ls -r t/
+e
+[vagrant@host1 bitcamp-ncp]$ ls -r t/e/s/
+ts
+[vagrant@host1 bitcamp-ncp]$ ls -r t/e/
+s
+```
 ---
-## mv
+## mv(move)
+
+* mv란 파일을 이동시키기 위해 사용하는 명령어
+* 사용법 $ mv 파일 목적경로
+* 목적 경로에 같은 이름의 파일이 존재할때 옵션 -b: 기존 파일을 백업 후, -f: 덮어쓸 것인지 묻지 않고, -i: 덮어쓸 것인지 물어보고 이동된다.
+* 옵션 -v : 이동중인 상태를 표시한다 
+```
+[vagrant@host1 bitcamp-ncp]$ mv a.txt ~/git/bitcamp-ncp/t/
+[vagrant@host1 bitcamp-ncp]$ cd t
+[vagrant@host1 t]$ ls
+a.txt  e
+```
 ---
 ## type
+
+* type란
+* 지정된 명령어가 쉘에 내장된 명령어인지, 외부명령어인지, 앨리어스 명령어인지 등을 확인
+```
+[vagrant@host1 bitcamp-ncp]$ type 옵션 파일명
+```
 ---
 ## which
 ---
