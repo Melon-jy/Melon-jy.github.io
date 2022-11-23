@@ -66,6 +66,11 @@ categories: jekyll update
 * HTML, CSS, JavaScript의 기본을 쓰는 사람이 웹퍼블리셔(화면)
 * HTML, CSS, JavaScript, UI FrameWork를 다루는 사람을 Front-end 개발자 (Client app UI)
 
+* Sementic
+
+<img src="https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png" alt="HTML 5 Cheat Sheets - An Infographic from " width="100%" class="infographic_embedder" /><p class="infographic_attr">Embedded from <a href="https://html.com/blog/html-5-cheat-sheets/" target="_blank"></a></p>
+
+
 
 
 <br><br><br>
