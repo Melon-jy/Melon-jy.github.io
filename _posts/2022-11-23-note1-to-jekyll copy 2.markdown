@@ -47,6 +47,9 @@ categories: jekyll update
 * CGI 규칙에 따라 작성한 프로그램
 * (1)요청 -> (2)실행 -> (3)작업수행 -> (4)작업결과를 HTML, GIF, JPEG 등의 형태로 만들어 리턴 -> (5)응답
 
+---
+
+
 
 <br><br><br>
 
