@@ -21,7 +21,7 @@ $lm-background-color:      #000000 !default;
 $lm-code-background-color: #242424 !default;
 
 $lm-link-base-color:       #00aa00 !default;
-$lm-link-visited-color:    darken($lm-link-base-color, 15%) !default;
+$lm-link-visited-color:    darken($lm-link-base-color, 0%) !default;
 $lm-link-hover-color:      $lm-text-color !default;
 
 $lm-border-color-01:       $lm-brand-color-light !default;
