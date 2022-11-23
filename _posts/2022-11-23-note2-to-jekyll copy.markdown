@@ -52,6 +52,18 @@ categories: jekyll update
 
 * 1994년 Tim Berners Lee는 미국 MIT에서 월드 와이드 웹 컨소시엄을 설립하고 모든 웹 표준과 가이드 라인을 제시하고 있다. 이와 함께 W3의 모든 특허를 누구나 무료로 사용할 수 있도록 공개했으며, 현재는 W3C의 이사로 활동하며 정부 데이터의 국민성을 높이기 위해 영국 정부와 함께 일하고 있다.
 
+---
+
+### HTML의 기본 구조
+
+* Element Tag : !docttype-html, HTML, Head, /Head, Body, /Body, /HTML
+* br뒤에 / 를 넣으면 끝 Tag그 생략 표시
+* Element Tag에서 생략해도 되는 Tag는 p, br 이 있음
+* meta의 경우 Tag를 끝맺지 않아야 함
+
+
+
+
 <br><br><br>
 
 <div id="disqus_thread"></div>
