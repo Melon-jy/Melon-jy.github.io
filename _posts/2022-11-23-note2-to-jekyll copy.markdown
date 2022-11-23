@@ -60,7 +60,11 @@ categories: jekyll update
 * br뒤에 / 를 넣으면 끝 Tag그 생략 표시
 * Element Tag에서 생략해도 되는 Tag는 p, br 이 있음
 * meta의 경우 Tag를 끝맺지 않아야 함
-
+* 자바의 경우 대소문자를 명확히 적어야함
+* HTML은 그렇지 않음
+* Photoshop 을 쓰는 사람을 웹디자이너(그림,아이콘)
+* HTML, CSS, JavaScript의 기본을 쓰는 사람이 웹퍼블리셔(화면)
+* HTML, CSS, JavaScript, UI FrameWork를 다루는 사람을 Front-end 개발자 (Client app UI)
 
 
 
