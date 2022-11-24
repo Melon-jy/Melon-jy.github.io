@@ -151,6 +151,8 @@ video poster="지정 이미지/크기" = 썸네일
 qwerty 키보드 나누려면 정확하게 type에 number를 줘야함
 tel을 주면 키보드까지 올라옴
 ```
+fieldset 필드 지정
+legend 입력양식
 
 <br><br><br>
 
