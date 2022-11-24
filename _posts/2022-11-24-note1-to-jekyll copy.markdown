@@ -152,6 +152,30 @@ qwerty 키보드 나누려면 정확하게 type에 number를 줘야함
 tel을 주면 키보드까지 올라옴
 ```
 
+* filedset
+* legend 입력 양식
+*
+*
+*
+*
+*
+*
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <br><br><br>
 
 <div id="disqus_thread"></div>
