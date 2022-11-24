@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "who is make a HTTP 과제"
+title:  "HTML, HTTP 배경 조사 과제"
 date:   2022-11-23 14:10:33 +0900
 categories: jekyll update
 ---

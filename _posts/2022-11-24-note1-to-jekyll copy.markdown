@@ -4,9 +4,12 @@ title:  "HTTP, CSS 수업"
 date:   2022-11-24 09:30:33 +0900
 categories: jekyll update
 ---
-### Data와 메모리
 
-* header, nav, main, footer
+* header - 상단부
+* nav - 목차 부분
+* main - 본문
+* footer - 하단부
+
 
 
 

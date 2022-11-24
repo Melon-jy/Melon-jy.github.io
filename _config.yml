@@ -29,7 +29,7 @@ github_username:  Melon-jy
 # Build settings
 theme: minima
 plugins:
-  - jekyll-feed
+  - "https://twip.kr/twitch_melon_"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
