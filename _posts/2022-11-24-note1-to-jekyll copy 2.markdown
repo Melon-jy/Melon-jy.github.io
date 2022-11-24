@@ -5,10 +5,6 @@ date:   2022-11-24 09:30:33 +0900
 categories: jekyll update
 ---
 
-* header - 상단부
-* nav - 목차 부분
-* main - 본문
-* footer - 하단부
 
 # CR / LF (Carriage Return / Line Feed)
 
@@ -156,13 +152,7 @@ legend 입력양식
 
 * filedset
 * legend 입력 양식
-*
-*
-*
-*
-*
-*
-*
+
 
 
 
