@@ -1,0 +1,233 @@
+---
+layout: post
+title:  "HTML,HTTP 수업1"
+date:   2022-11-24 09:10:33 +0900
+categories: jekyll update
+---
+
+* 한빛미디어에서 HTML5,css 바이블3 예제 다운로드
+
+### HTML과 HTTP 등장 전과 후
+
+* FTP (File Transfer Protocol)
+* 시작은 논문(HTML)을 simple .txt로 만들어서 FTP server에 upload함
+* 논문을 다운 받기 위해 FTP server에 접속해서 download를 함
+* server에 접속해 download를 하기 위해서는 Client가 필요함
+* server와 client의 데이터 송수신을 위해서 통신 규칙(protocol)이 필요함
+* 단점 - 논문이 참조하는 다른 논문을 다운로드 받기 번거롭고 논문 안에 다른 논문이 업로드 된 서버 주소가 없음
+* 다른 논문의 위치 정보 삽입 + .txt의 포맷을 지정(예: a href="서버/a/t.html"제 1논문/a ing src="a.gif") + 그림, 음성, 동영상 등의 삽입이 가능하게 만든 것이 HTML
+* img src="a.gif" 를 데이터를 설명하는 데이터를 제어하는 데이터인 =부가데이터 , metadata, markup(출판사 용어) language의 등장 (HTML)
+* 워드패드에 글을 적고 rtf로 저장 후 메모장으로 열면
+* Markup 예시 (\b\f0\fs44\lang1042 ABC\'ba\'f1\'c6\'ae\'c4\'b7\'c7\'c1\'b0\'fs20\par) 
+* markup을 직접 적기엔 너무 어려워 등장한 것이
+* HTML(Hyper Text Markup Language)
+* HTML 문서를 원활하게 받고 다른 HTML 문서를 찾아가기 쉽도록 만든 통신 프로토콜 HTTP(Hyper Text Transfer Protocol)server가 등장함
+* CURL, Wget = HTTP client
+* curl https://www.naver.com 을 하게되면 네이버의 화면 CMD에 출력해줌
+* Wget 은 다운로드 받아줌
+
+### HTTP Client / Server app.
+
+* HTTP Client - 클라이언트가 먼저 요청을 함
+* HTTP Server - 클라이언트의 요청에 응답 함
+* HTTP Server : NginX, Apache HTTP server 가 대표적인 Server
+* HTTP Client : chrome, Safari, Firefox, Edge 가 대표적인 Client
+* HTTP Client의 다른 이름을 Web Browser라고 함
+* HTTP Server의 다른 이름은 Web Server라고 함
+* Web의 정의: 문서들이 거미줄 처럼 얽혀있다고 하여 Web이라 표현함
+* HTTPS는 HTTP와 security가 합쳐져 웹(HTTP)+보안(S)라 HTTPS라 한다
+---
+### Web 기술의 활용
+
+* (1세대)논문 공유 => (2세대)회사소개, 제품소개 =>(2세대) 홈페이지 => (3세대) 프로그램, 방명록, 방문자 수, 게시판 등의 기능 추가
+
+* static resource - 정적 자원 : 작성된 그대로 유지하는 것
+* CGI 규칙에 따라 작성한 프로그램
+* (1)요청 -> (2)실행 -> (3)작업수행 -> (4)작업결과를 HTML, GIF, JPEG 등의 형태로 만들어 리턴 -> (5)응답
+
+---
+### full-stack 개발자 종류
+
+* SI 신규 프로젝트 개발자
+* SM 프로젝트 후 유지보수 개발자
+
+---
+
+### HTML의 기본 구조
+
+* Element Tag : !docttype-html, HTML, Head, /Head, Body, /Body, /HTML
+* br뒤에 / 를 넣으면 끝 Tag그 생략 표시
+* Element Tag에서 생략해도 되는 Tag는 p, br 이 있음
+* meta의 경우 Tag를 끝맺지 않아야 함
+* 자바의 경우 대소문자를 명확히 적어야함
+* HTML은 그렇지 않음
+* Photoshop 을 쓰는 사람을 웹디자이너(그림,아이콘)
+* HTML, CSS, JavaScript의 기본을 쓰는 사람이 웹퍼블리셔(화면)
+* HTML, CSS, JavaScript, UI FrameWork를 다루는 사람을 Front-end 개발자 (Client app UI)
+
+* Sementic
+
+* div Tag를 -> Sementic Tag : ex) section, article, aside, Header, footer
+
+<img src="https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png" alt="HTML 5 Cheat Sheets - An Infographic from " width="100%" class="infographic_embedder" /><p class="infographic_attr">Embedded from <a href="https://html.com/blog/html-5-cheat-sheets/" target="_blank"></a></p>
+
+* HTML 공부법 -> (1)예제 확인 (2)실행 (3)결과 확인
+* !Doctype HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://___"
+* HTML(root Element) PUBLIC or System(문서 공개 여부 설정) -(사설)+(공인)
+* W3C(만든 조직의 이름 설정) 
+* DTD(문서 식별자 설정) 
+* HTML4.01(문서 이름 설정)
+* EN(문서 언어 설정)
+* http://___(문서를 정의한 DTD파일의 URL)
+* DTD <- old, Schema <- New
+* I18N : Internationnalization
+* L10N : Localization
+
+# Data와 메모리
+
+### 메모리 계산식
+
+* 10진수, 2진수, 16진수
+* 2진수 변환 규칙
+* 정수 - 양수와 음수로 나뉨
+* Sign(부호) - Magnitude(절대값) :양수와 음수는 부호만 다르고 값은 같다
+* +24 00011000 = 맨 앞의 숫자는 양수 Sign bit
+* -24 10011000 = 맨 앞의 숫자가 음수 Sign bit
+* 문제점 : - 의 연산 결과가 일반적이지 않다
+* 메모리는 byte와 byte의 연속된 단위 모든 단위는 byte로 표현해야함
+* 예술계는 자유와 여유가 중요하지만
+* 그 외의 성공한 사람들은 끈기와 인내로 성공하였다.
+
+### 1의 보수 (one's complement)
+
+* 음수를 만들 경우엔 1의 보수를 써야함
+* 00011000을 1의 보수로 할 경우 11100111이 된다.
+* 0 -> 1, 1 -> 0 
+* 00000101 - 00000011 = 00000101 + 11111100
+
+### 2의 보수 (Two's complement)
+
+* 11100111 -> 11101000
+* 11111101 = -3의 2의 보수
+* 00000010 = 2
+* 현대의 컴퓨터는 음수를 표현할 때 2의 보수를 사용함
+
+### Excess-k(k초과)
+
+* Excess-k(k초과) : 부동 소수점의 지수부 표현할 때 사용
+* 오프셋 바이너리 :
+* 정수 + k값(Bias) = 2진수
+* Bias값 : 메모리 비트수 - K= 2 (메모리 비트 수-1)
+* ex) 8bit일 경우 : 2의 8승-1 + -1 = 128-1 = 127
+* ex) 32bit : 2의 32승-1 + -1 = 2,147,483,648 - 1 = 2,147,483,647
+* Sign(부호) - Magnitude(절대값)를 쓸 경우엔 가수부를 쓴다
+
+### ASCII(7bit) - 아스키 코드표
+
+* ASCII(7bit) : 영어 알파벳 대소문자, 숫자, 특수문자 등등
+* 0x41(A) 0x42(B) 0x43(C) 0x61(a) 0x62(b) 0x63(c) 0x30(0) 0x31(1) 0x32(2)
+* 7bit = 총 128문자 중 95자에 대해 7bit 2진수 규칙을 정함
+
+### ISO-8859-1 ~ n
+
+* ISO-8859-1 = ISO-Latin-1 : ASCII+유럽문자+남미문자
+* 8bit 사용
+* 한글 windows 기본 숫자표
+* 11172개의 음절
+
+### EUC-KR
+
+* EUC-KR : 16bit로 한글 문자 정의
+* ISO-8859-1(1byte) + 한글(2byte)
+* 가 = 1011 0000 1010 0001 = 0x B 0 A 1
+* 각 =                       0x B 0 A 2
+* 간 =                       0x B 0 A 3
+* 똘 =                       0x B 6 C A
+* 똠 =  EUC-KR               정의 안함 - 0x 8c63
+* 똡 =                       정의 안함 - 0x 8c64
+* 똣 =                       정의 안함 - 0x 8c66
+* 똥 =                       0x B 6 C B =>
+
+### 조합형
+
+* 조합형(2byte) : 모든 한글을 표현할 수 있지만 국제 표준은 아님
+* 초성 모음(5bit)
+* 중성 자음(5bit)
+* 종성 받침(5bit)
+* 걘 - 1 00010 00110 00101을 16비트로 바꾸면 0x 8 8 C 5
+
+### MS-949 (CP949)
+
+* MS-949(16bit) : EUC-KR+@ = 11172자를 사용할 수 있게 지원
+* 똠 똡 똣 등의 정의하지 않던 단어들을 추가로 정의함
+* Charactheset(문자 집합) : 문자에 대해 정의된 2진수(16진수)
+
+### Unicode(2byte)
+
+* Unicode(국제 표준) : 모든 문자를 2byte로 정의
+* 현재 Unicode4(4byte)로 전환 중
+* 한글은 EUC-KR과 호환되지 않음, 모든 문자를 새 값으로 재정의 함
+* 한글의 모든 문자 코드는 정렬되었다.
+* 영문자도 2byte이며 메모리 낭비가 심하며 기존의 편집기 사용 불가하다.
+
+### UTF-8 (Universal Character Set Transformation Format)
+
+* UTF-8 : 기존의 편집기에서도 영어를 읽고 쓸 수 있도록 만듬
+* 7bit로 정의해서 쓰던 문자는 그대로 계속  8bit 사용
+* ex) ASCII 문자코드
+* 영어 외 문자는 규칙에 따라 2~4byte로 변환
+* ex) 한글 2byte -> 3byte로 변환 : **한글은 오히려 손해**
+* Unicode2(UTF-16 or ucs2) : AC00 => 1010 1100 0000 0000
+* UTF-8 : 1110 1010 1011 0000 1000 0000 - EAB080
+* 색상 = RGB규칙 : RED(8bit) GREEN(8bit) BLUE(8bit)
+* 빛의 세기 : 00~FF
+* ex) FF 00 00 = 빨강, 00FF00 = 초록, FF FF 00 = 노랑
+
+# Encoding & Decoding
+
+* Encoding :규칙에 따라 2진수로 표현 =문자 -> 문자코드 (코드로 변환) 규칙에 따라 다른 형식으로 변환 코드 -> 코드
+* Decoding : 원래 형식으로 전환
+* URL Encoding : 웹 자원에 주소를 표기하는 문법(HTML, CSS등)
+* Encoding : ex)압축, 암호화
+* Decoding : ex)압축 풀기, 복호화
+* URL Encoding : URL에서 특정한(%인코딩) 의미로 사용되는 문자를 다루고 싶을때 규칙에 따라 변환함
+* URL Encoding : URL에서 특수 목적으로 사용하는 문자 Reserved Keyword
+* 일반 용도로 사용할 수 없고, 특정 형식에 맞춰 변환해야 한다.
+* 예약어 : ! * ' () ; : @ & = + $ , / ? # []
+* 비예약어 : A ~ Z, a ~ z, 0~9, - _ . ~
+* URL Encoding 비예약어 : ex) A -> A, a ->a, 7 -> 7, . -> .
+* URL Encoding 예약어 : ex) ! 16진수(21) -> %21 16진수(25)(32)(31)
+* 숫자 2 = 0000 0010 = 2의 보수
+* 문자 2 = 0011 0010 = ISO-8859-1
+* !(21) -> %21(25)(32)(31)
+* +(2B) -> %2B(25)(32)(42)
+* ?(3F) -> %3F(25)(33)(46)
+* Space(+) -> +(2B)
+* 가(EA)(B0)(80) -> %EA%B0%80 (25)(45)(41)(25)(42)(4f)(25)(38)(30)
+
+
+
+---
+
+
+<br><br><br>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://melonweb.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

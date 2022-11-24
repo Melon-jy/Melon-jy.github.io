@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "리눅스 기본 명령어"
+title:  "리눅스 기본 명령어 조사 과제"
 date:   2022-11-23 09:40:33 +0900
 categories: jekyll update
 ---

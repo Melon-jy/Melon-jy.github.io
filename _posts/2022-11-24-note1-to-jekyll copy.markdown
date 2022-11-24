@@ -1,9 +1,15 @@
 ---
 layout: post
-title:  "비트캠프 수업"
-date:   2022-11-23 11:10:33 +0900
+title:  "HTTP, CSS 수업"
+date:   2022-11-24 09:30:33 +0900
 categories: jekyll update
 ---
+
+* header - 상단부
+* nav - 목차 부분
+* main - 본문
+* footer - 하단부
+
 
 
 
