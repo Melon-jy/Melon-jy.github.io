@@ -170,16 +170,18 @@ categories: jekyll update
 * 한글의 모든 문자 코드는 정렬되었다.
 * 영문자도 2byte이며 메모리 낭비가 심하며 기존의 편집기 사용 불가하다.
 
-### UTF-8
+### UTF-8 (Universal Character Set Transformation Format)
 
 * UTF-8 : 기존의 편집기에서도 영어를 읽고 쓸 수 있도록 만듬
-* 8bit로 정의해서 쓰던 문자는 그대로 계속 8bit 사용
-* ex) ISO-8859-n 문자코드
+* 7bit로 정의해서 쓰던 문자는 그대로 계속  8bit 사용
+* ex) ASCII 문자코드
 * 영어 외 문자는 규칙에 따라 2~4byte로 변환
 * ex) 한글 2byte -> 3byte로 변환 : **한글은 오히려 손해**
-
-
-
+* Unicode2(UTF-16 or ucs2) : AC00 => 1010 1100 0000 0000
+* UTF-8 : 1110 1010 1011 0000 1000 0000 - EAB080
+* 색상 = RGB규칙 : RED(8bit) GREEN(8bit) BLUE(8bit)
+* 빛의 세기 : 00~FF
+* ex) FF 00 00 = 빨강, 00FF00 = 초록, FF FF 00 = 노랑
 
 
 
