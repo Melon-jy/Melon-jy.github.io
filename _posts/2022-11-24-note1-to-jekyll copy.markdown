@@ -145,8 +145,8 @@ video poster="지정 이미지/크기" = 썸네일
 * type="email"
 ```
 핸드폰에서 숫자 키보드와
-qwerty 키보드 나누는 방법
-
+qwerty 키보드 나누려면 정확하게 type에 number를 줘야함
+tel을 주면 키보드까지 올라옴
 ```
 
 <br><br><br>
