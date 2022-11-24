@@ -92,8 +92,11 @@ HTML 공부법 태그를 정지해서 하나씩 추가하고 지우면서 확인
 ```
 video poster="지정 이미지/크기" = 썸네일
 ```
-*  
-
+* select - 선택지가 많을때 사용하는 것
+```
+<option multiple size="7>
+```
+* 을 이용해 여러가지 선택을 할 수 있게 함
 
 
 ### Tag와 attribute
