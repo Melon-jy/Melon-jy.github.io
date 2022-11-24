@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "HTTP, CSS 수업"
+title:  "HTTP, CSS 수업1"
 date:   2022-11-24 09:30:33 +0900
 categories: jekyll update
 ---
@@ -103,12 +103,51 @@ video poster="지정 이미지/크기" = 썸네일
 * inline style : 최우선 순위으로 스타일을 value에 정함
 * 외부 css 파일 :
 * css링크 걸기 : link href="x.css"
-* 
+* form : 
+* input : 입력칸
+* method : 
+* name : 
+* post : 
+* password :
+* submit : 
+* text : 글을 쓸 수 있음
+* button : valur="oo"/ 하면 oo가나옴
+* checkbox : 체크박스가 생성됨 여러개를 만들 수도 있음 취소가 가능함
+* file : 파일 선택
+* hidden :
+* image :
+* radio : 체크박스 같은 것이 생기고 취소가 불가능함
+```
+<input type="radio" name="cf" /> = 
+<input type="radio" name="cf" /> = 네임을 이렇게 같게 하면 셋중 하나는 선택해야함
+<input type="radio" name="cf" checked/> = 기본 선택
+```
+* reset : 초기화
+* label : 이름 달기
+```
+<label for=username">이름</label>
+<input type="text" id="username" />
+<input type=text" id="title" />
+```
+#### input
 
+* type="color" - 
+* type="datetime" - 
+* type="datetime-local"
+* type="month"
+* type="number"
+* type="range"
+* type="cearch"
+* type="tel"
+* type="time"
+* type="url"
+* type="week"
+* type="email"
+```
+핸드폰에서 숫자 키보드와
+qwerty 키보드 나누는 방법
 
-
-
-
+```
 
 <br><br><br>
 
