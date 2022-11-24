@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HTML,HTTP 수업1"
-date:   2022-11-23 11:10:33 +0900
+date:   2022-11-24 09:10:33 +0900
 categories: jekyll update
 ---
 
