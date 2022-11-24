@@ -154,6 +154,30 @@ tel을 주면 키보드까지 올라옴
 fieldset 필드 지정
 legend 입력양식
 
+* filedset
+* legend 입력 양식
+*
+*
+*
+*
+*
+*
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <br><br><br>
 
 <div id="disqus_thread"></div>
