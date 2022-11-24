@@ -2,8 +2,8 @@
 
 // Define defaults for each variable.
 
-$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", "SCDream1", "SCDream2", "SCDream3", "SCDream4", "SCDream5", "SCDream6", "SCDream7", "SCDream8", "SCDream9", Roboto, Helvetica, Arial, sans-serif !default;
-$code-font-family: "Menlo", "SCDream1", "SCDream2", "SCDream3", "SCDream4", "SCDream5", "SCDream6", "SCDream7", "SCDream8", "SCDream9", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif !default;
+$code-font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
