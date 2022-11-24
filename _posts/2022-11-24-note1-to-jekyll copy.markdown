@@ -10,6 +10,103 @@ categories: jekyll update
 * main - 본문
 * footer - 하단부
 
+# CR / LF (Carriage Return / Line Feed)
+
+* Carriage Return / Line Feed : 타자기에서 줄 바꾸는 것을 모방하여 만든 코드 값
+* CR -> 0x0D
+* LF -> 0x0A
+* Windows OS 에서는 줄 바꿈을 표시할 때 CRLF 2byte를 붙인다.
+* Unix/Lunux 에서는 줄 바꿈을 표시할 때 LF 1byte만 사용한다.
+* HTML5는 끝맺음[/]를 생략해도 됨
+```
+[vagrant@host1 ~]$ ls
+[vagrant@host1 ~]$ nano a.txt
+[vagrant@host1 ~]$ ls -al
+```
+
+### HTML 기본 Tag
+
+* hr = 선긋기
+* a = 앵커 (닻)
+* href = 하이퍼 텍스트 레퍼런스
+* p = 줄바꿈 끝맺음/ 를 써야함
+* br = 줄바꿈 끝맺음이 필요없음
+* head, nav, body, footer = 위에서 부터 아래로
+* h1~h6 = h1이 가장 크고 h6가 가장 작음
+* id = 가장 위에 올려주는 것
+* b = 볼드
+* i = 이탤릭
+* small = 작게
+* sub = 밑으로
+* sup = 위로
+* ins = 아랫줄
+* del = 취소선
+* ruby = 부모태그
+* rp = 작게 출력
+* ol = ordered list
+* ul = unordered list
+* type = 종류 설정
+* start = 시작점 설정
+* li = 리스트
+* dd = 디스크립션데이터  컨텐츠 내용
+* dt = 디스크립션타이틀  컨텐츠 제목
+* table =  테이블
+* tr = 테이블 정렬
+* th = 테이블 헤더
+* td = 테이블 데이터
+* tb = 테이블 바디
+* tf = 테이블 하단
+* caption
+* thead style = 테이블 헤드 스타일
+* tbody style = 테이블 바디 스타일
+* tfooter style = 테이블 하단 스타일
+* col = 컬러
+* sapn = 칸수
+* colgroup = 컬러 그룹 지정
+```
+<!---> 이렇게 하여 주석을 달아 태그를 정지할 수 있음
+HTML 공부법 태그를 정지해서 하나씩 추가하고 지우면서 확인하기
+```
+* colspan="3" = 컬러 3칸을 합치겠다
+* rowspan="3" = 로우 3칸을 합치겠다
+* img = 이미지
+* src = 소스
+* alt = alt 속성 값을 보여주거나 속성이 없으면 소스를 보내줌 
+* alt = 시각 장애인을 위해서라도 필요함
+* width = 픽셀 단위의 넓이
+* heigth = 필셀 단위의 높이
+* audio = 오디오
+```
+<audio> src="kalimba.mp3" controls="controls"</audio>
+```
+* controls = 컨트롤 (값을 지정할 필요 없는 컨트롤
+* selected = 고르기
+* checked = 체크하기
+* readonly = 읽기전용 
+* autoplay = 자동재생 ) - 보안 정책상 자동으로 재생할 수 없음
+* source = 소스 mp3를 재생할 수 없다면 ogg를 써야함
+
+* MIME(Multi Purpose Internet Mail Extensions) 메일에 첨부한 컨텐츠가 어떤 형식인지 상대편에게 알려주는 용도 
+* MIME type - 구글링 (mdn web docs / Developer.mozilla.org)
+* Video = 비디오
+```
+video poster="지정 이미지/크기" = 썸네일
+```
+*  
+
+
+
+### Tag와 attribute
+
+* a attribute="value">콘텐츠<끝태그
+* Style : 끝맺음을 따로 해야함
+* inline style : 최우선 순위으로 스타일을 value에 정함
+* 외부 css 파일 :
+* css링크 걸기 : link href="x.css"
+* 
+
+
+
 
 
 
