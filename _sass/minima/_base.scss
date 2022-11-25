@@ -1,6 +1,6 @@
 html {
   font-size: $base-font-size;
-  font-family: 's-core dream9';
+  font-family: 's-core dream6';
 }
 
 /**
@@ -80,7 +80,7 @@ figure > img {
 
 figcaption {
   font-size: $small-font-size;
-  font-family: 's-core dream9';
+  font-family: 's-core dream6';
 }
 
 
@@ -145,7 +145,7 @@ blockquote {
   padding-left: $spacing-unit / 2;
   @include relative-font-size(1.125);
   font-style: italic;
-  font-family: 's-core dream9';
+  font-family: 's-core dream6';
 
   > :last-child {
     margin-bottom: 0;
