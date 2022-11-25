@@ -134,7 +134,7 @@ Enter
 * .gitignore File을 자동 생성해 주는 사이트를 이용하는 것
 
 * gitignore.io는 gitignore 자동 생성 사이트 주소
-* Windows, macOS, Linux, Gradle, Java, VisualStudioCode, Eclipse, (제외 해야하는 파일을 모르는 경우 기존 회사의 프로젝터에게 복사해서 붙혀넣기) 
+* Windows, macOS, Linux, Gradle, Java, VisualStudioCode, Eclipse, (제외 해야하는 파일을 모르는 경우 기존 회사의 프로젝터에게 복사해서 붙여넣기) 
 
 ```
 [vagrant@host1 bitcamp-ncp]nano .gitignore
@@ -378,7 +378,7 @@ ctrl + o Enter ctrl + x
 *                        /.gitignore
 *                        /a.txt
 * (Repo.)모든 저장소(main)은 변경 내역을 관리하는 기본 트랙을 갖고있다
-* 뒤에 --short를 붙혀 간략하여 볼 수 있음
+* 뒤에 --short를 붙여 간략하여 볼 수 있음
 * git add .gitignore 를 하는 순간 A  .gitignore ?? a.txt로 표시됨을 확인할 수 있다 A, ? : staging area 상태 ? -untracked
 
 ```

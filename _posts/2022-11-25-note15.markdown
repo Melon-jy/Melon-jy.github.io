@@ -75,23 +75,22 @@ content-type : text/html; charset=UTF-8}
 
 ### Get 요청
 * /html/form/exam02?name(파라미터명)=aaa(파라미터값)&(구분자)age=11 : 공백이 생겨선 안됨
-* path(자원의 주소) query string(서버에 보내는 데이터)
+* path(자원의 주소) query staring(서버에 보내는 데이터)
 * 파라미터란 URL에서 ?이후에 발생하는 것
 ```
-<br>
 <form id="form1" action="/html/form/exam-02 name="aaa" age="11">
      이름: <input type="text" name="name"><br>
      나이: <input type="text" name="age"><br>
      <button>요청</button>
 ```
-* 
-*
-*
-*
-*
-*
-*
-*
+* 위와 같이 한 후 URL끝에 #form1을 입력시 해당 위치로 이동
+* 여백의 공간이 있어야 이동이 가능함
+* query staring 의 한계 : Binary data를 보낼 수 없다.
+* Text는 일반 Text Editor로 편집할 수 있는 포맷이다.
+* ex).txt, .rtf, .html, .css, .js, . xml, .json, properties, .java, .py 등등
+* binary 형식 : byte단위로 포맷이 되어있고 일반txt editor로 편집 불가하며 전용 app를 사용해야 함
+* ex) jpg, mp3 등의 파일을 txt로 열어 중간에 언어를 적게되면 형식이 깨져 열리지 않게 됨
+* app의 예) primiere pro
 *
 
 
