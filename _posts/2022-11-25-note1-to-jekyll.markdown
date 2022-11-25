@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "HTML,css,java"
+title:  "HTML form"
 date:   2022-11-25 09:10:33 +0900
 categories: jekyll update
 ---
