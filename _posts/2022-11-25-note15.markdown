@@ -72,9 +72,28 @@ content-type : text/html; charset=UTF-8}
 * Post 요청은 method에 post를 요청하면 됨
 * get 요청일때는 컨텐츠에 대한 부연 설명을 하지 않음
 * post 요청일때는 컨텐츠 타입에 대한 부연 설명을 함
+
+### Get 요청
+* /html/form/exam02?name(파라미터명)=aaa(파라미터값)&(구분자)age=11 : 공백이 생겨선 안됨
+* path(자원의 주소) query string(서버에 보내는 데이터)
+* 파라미터란 URL에서 ?이후에 발생하는 것
+```
+<br>
+<form id="form1" action="/html/form/exam-02 name="aaa" age="11">
+     이름: <input type="text" name="name"><br>
+     나이: <input type="text" name="age"><br>
+     <button>요청</button>
+```
 * 
-* 
-* 
+*
+*
+*
+*
+*
+*
+*
+*
+
 
 
 
