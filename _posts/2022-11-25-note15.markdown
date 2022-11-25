@@ -102,16 +102,47 @@ content-type : text/html; charset=UTF-8}
 * ms오피스에서 지원하는 x가 붙은 것들은 txt파일
 * get 요청은 binary data를 정리할 수 없음
 * binary : Base64 규칙으로 변환 text데이터를 binary데이터로 decoding가능
+* 브라우저에서는 jpg, gif를 받지 못함 오로지 비트맵만 가능
+* URI 크기의 제한 때문에 대용량 데이터를 보낼 수 없음
+* 검색 (webserver Request URI size limit)
+* URL은 브라우저 캐시에 저장됨 -> 보안에 취약함
+
+### Post요청
+
+```
+Post /html/form/exam02   <- query stag가 없다  http/1.1  <-  request line
+host : 192.168.0.29:5500               <- header
+Content- length :15                       <- header 
+Content-Type: application/x-www-form-url-encoded <- header
+name=aaa&age=22 <- pst 요청은 message-body부분에
+```
+#### 특징
+* binary 테이터 전송 가능
+* URL에 노출 안됨 -> URL에 테이터를 포함해야 하는 경우에 적합하지 않다. ex)-> 게시글 조회 URL은 포스트 방식에 적합하지 않음
+* 여러 개의 파일 첨부 가능
+* 용량 제한이 없음
 * 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+
+
+
+
+
+
 
 
 
