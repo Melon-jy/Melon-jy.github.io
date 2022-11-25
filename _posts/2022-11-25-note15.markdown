@@ -68,14 +68,13 @@ content-type : text/html; charset=UTF-8}
 * URI : Unfiorm Resource Identifier = URL과 URN을 포함함
 * URL : HTTP://서버:포트/0/0/0
 * URN : 0 : 0 : 0
-
-*
-*
-*
-*
-*
-*
-*
+* form action에 method를 지정 하나 안하나 같으며 button은 form 안에 있어야함
+* Post 요청은 method에 post를 요청하면 됨
+* get 요청일때는 컨텐츠에 대한 부연 설명을 하지 않음
+* post 요청일때는 컨텐츠 타입에 대한 부연 설명을 함
+* 
+* 
+* 
 
 
 
