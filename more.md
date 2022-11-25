@@ -3,10 +3,11 @@ layout: page
 title: Career
 premalink: /Career/
 ---
-# 경력 및 수상경력
-<br><br><br><br><br>
+<br><br><br><br>
 
-* MBTI : INFJ-T
+### 경력 및 수상경력
+<br><br><br>
+
 * 평택시 청소년 2011 가요제 동상
 * 배틀그라운드 2019 Region of Championship 국가대표 선발전 Team.BAMM 은상
 * Riot Games - 발로란트 공식 파트너 크리에이터 2020 ~ ing

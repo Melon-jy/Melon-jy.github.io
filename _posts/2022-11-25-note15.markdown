@@ -91,7 +91,23 @@ content-type : text/html; charset=UTF-8}
 * binary 형식 : byte단위로 포맷이 되어있고 일반txt editor로 편집 불가하며 전용 app를 사용해야 함
 * ex) jpg, mp3 등의 파일을 txt로 열어 중간에 언어를 적게되면 형식이 깨져 열리지 않게 됨
 * app의 예) primiere pro
-*
+* 데이터를 읽을땐 숫자인지 문자인지 명확하게 구분해야함
+* 메모장으로 MP3데이터를 읽을 수 있다고 하여 MP3가 txt가 된 것은 아님
+* binary의 종류)jpg, .gif, .png, .mp3, .mp4, .avi, .doc 등등
+* ECMA에서 MS오피스와 star오피스 두 가지 다 국제 표준으로 정함
+* ms오피스에서 지원하는 x가 붙은 것들은 txt파일
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
 
 
 
