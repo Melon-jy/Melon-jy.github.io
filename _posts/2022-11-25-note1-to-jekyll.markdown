@@ -1,11 +1,15 @@
 ---
 layout: post
-title:  "HTML form"
+title:  "웹 네트워크"
 date:   2022-11-25 09:10:33 +0900
 categories: jekyll update
 ---
 
+# 네트워킹(NetWorking)
 
+* connection-Oritented - 연결 지향 -> 연결 후 통신 ex)전화
+* connectionless - 비연결 -> 연결없이 데이터 전송 ex)편지, 방송
+* 
 
 
 

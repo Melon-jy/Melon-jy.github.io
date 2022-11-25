@@ -3,7 +3,7 @@ author: 이준영
   name: 이준영
   email: crazygizmowh@nate.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  비트 캠프에서 받은 수업 내용이나 과제 내용이 포함되어 있는 사이트 입니다.
+비트 캠프에서 받은 수업 내용이나 과제 내용이 포함되어 있는 사이트 입니다.
   퍼가실 때에는 반드시 출처를 남겨주세요.
 
 show_excerpts: false # set to true to show excerpts on the homepage
@@ -15,9 +15,19 @@ minima:
 
   # generate social links in footer
   social_links:
-    - { platform: facebook,       user_url: "https://www.https://www.facebook.com/crazygizmowh" }
+    - { platform: devto,          user_url: "https://dev.to/jekyll" }
+    - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
+    - { platform: facebook,       user_url: "https://www.facebook.com/crazygizmowh" }
+    - { platform: flickr,         user_url: "https://www.flickr.com/photos/jekyll" }
     - { platform: github,         user_url: "https://github.com/melon-jy" }
-    - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
+    - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
+    - { platform: instagram,      user_url: "https://www.instagram.com/meltube2020" }
+    - { platform: keybase,        user_url: "https://keybase.io/jekyll" }
+    - { platform: linkedin,       user_url: "https://www.linkedin.com/in/jekyll" }
+    - { platform: microdotblog,   user_url: "https://micro.blog/jekyll" }
+    - { platform: pinterest,      user_url: "https://www.pinterest.com/jekyll" }
+    - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/1234567/jekyll" }
+    - { platform: telegram,       user_url: "https://t.me/jekyll" }
     - { platform: twitter,        user_url: "https://twitter.com/Melon_Meltube" }
     - { platform: youtube,        user_url: "https://www.youtube.com/@valorant7180/videos" }
 
