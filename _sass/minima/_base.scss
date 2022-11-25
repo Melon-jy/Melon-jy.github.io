@@ -19,11 +19,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-<<<<<<< HEAD
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height}/#{$base-style-SCDream6} $base-font-family;
-=======
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height}/ $base-font-family;
->>>>>>> 036d1a332c882488f7c00e55a56eff77d664de30
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
