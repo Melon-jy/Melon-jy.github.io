@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "HTTP, CSS 수업"
+title:  "HTTP, CSS Tag수업"
 date:   2022-11-24 09:30:33 +0900
 categories: jekyll update
 ---
