@@ -101,7 +101,7 @@ content-type : text/html; charset=UTF-8}
 * ECMA에서 MS오피스와 star오피스 두 가지 다 국제 표준으로 정함
 * ms오피스에서 지원하는 x가 붙은 것들은 txt파일
 * get 요청은 binary data를 정리할 수 없음
-* 
+* binary : Base64 규칙으로 변환 text데이터를 binary데이터로 decoding가능
 * 
 * 
 * 
