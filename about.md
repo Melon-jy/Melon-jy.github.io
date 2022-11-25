@@ -1,18 +1,22 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Profile
+permalink: /Profile/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+<img src="https://github.com/Melon-jy/Melon-jy.github.io/blob/main/profile.jpg?raw=true" width="400"><br><br><br>
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+* **이름 : 이준영**
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+* **생일 : 2월 7일**
+
+* **혈액형 : A형**
+
+* **MBTI : INFJ-T**
+
+* **취미 : 노래부르기, 웹툰보기, 웹소설읽기, 영화보기**
+
+* **특기 : 게임**
 
 
-[jekyll-organization]: https://github.com/jekyll
+

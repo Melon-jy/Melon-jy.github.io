@@ -10,19 +10,19 @@ $color-scheme-dark: false !default;
 // Light mode
 // ----------
 
-$lm-brand-color:           #828282 !default;
+$lm-brand-color:           #e2f1e2 !default;
 $lm-brand-color-light:     lighten($lm-brand-color, 40%) !default;
 $lm-brand-color-dark:      darken($lm-brand-color, 25%) !default;
 
-$lm-site-title-color:      $lm-brand-color-dark !default;
+$lm-site-title-color:      #9cff9c($lm-brand-color, 0%) !default;
 
-$lm-text-color:            #111111 !default;
-$lm-background-color:      #fdfdfd !default;
-$lm-code-background-color: #eeeeff !default;
+$lm-text-color:            #e2f1e2 !default;
+$lm-background-color:      #282828 !default;
+$lm-code-background-color: #000000 !default;
 
-$lm-link-base-color:       #2a7ae2 !default;
-$lm-link-visited-color:    darken($lm-link-base-color, 15%) !default;
-$lm-link-hover-color:      $lm-text-color !default;
+$lm-link-base-color:       #9cff9c !default;
+$lm-link-visited-color:    darken($lm-link-base-color, 0%) !default;
+$lm-link-hover-color:      #9cff9c($lm-text-color, 0%) !default;
 
 $lm-border-color-01:       $lm-brand-color-light !default;
 $lm-border-color-02:       lighten($lm-brand-color, 35%) !default;
