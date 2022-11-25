@@ -36,6 +36,7 @@ response status-> HTTP/1.1 -> 200 ok
 
 * server header(응답에 대한 부연 설명) 응답헤더, 공통헤더, Entity header
 * Message-body
+
 ```
 {Content-length : ~(byte)
 content-type : text/html; charset=UTF-8}
@@ -44,6 +45,7 @@ content-type : text/html; charset=UTF-8}
 
 </html>
 ```
+
 * Protocols 주소
 
 * https://www.w3.org/Protocols/rfc2616/rfc2616.html 
@@ -77,12 +79,14 @@ content-type : text/html; charset=UTF-8}
 * /html/form/exam02?name(파라미터명)=aaa(파라미터값)&(구분자)age=11 : 공백이 생겨선 안됨
 * path(자원의 주소) query staring(서버에 보내는 데이터)
 * 파라미터란 URL에서 ?이후에 발생하는 것
+
 ```
 <form id="form1" action="/html/form/exam-02 name="aaa" age="11">
      이름: <input type="text" name="name"><br>
      나이: <input type="text" name="age"><br>
      <button>요청</button>
 ```
+
 * 위와 같이 한 후 URL끝에 #form1을 입력시 해당 위치로 이동
 * 여백의 공간이 있어야 이동이 가능함
 * query staring 의 한계 : Binary data를 보낼 수 없다.
