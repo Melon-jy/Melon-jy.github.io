@@ -48,7 +48,7 @@ content-type : text/html; charset=UTF-8}
 
 * https://www.w3.org/Protocols/rfc2616/rfc2616.html 
 
-# Proxy서버
+### Proxy서버
 
 * Client와 server 중간에 통신을 중재함 
 * Client -> proxy -> server 식으로 요청
@@ -56,11 +56,14 @@ content-type : text/html; charset=UTF-8}
 * proxy : cache(임시저장소)
 * 응답 데이터를 보관
 * 같은 자원을 요청할때 보관된 데이터를 즉시 전달
-* Network Overhead
-* 
-* 
+* Network Overhead를 줄인다
+* 응답속도 개선됨
+### 모니터링
 
+* 모니터링 : 요청과 응답 내용 감시, 보안 강화
+* HTTP 통신을 살펴볼 수 있다.
 
+### charls proxy 
 
 
 
