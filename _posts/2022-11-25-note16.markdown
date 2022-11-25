@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "css 167~291p까지 예습"
+title:  "git 연습"
 date:   2022-11-25 13:27:33 +0900
 categories: jekyll update
 ---
@@ -12,6 +12,9 @@ categories: jekyll update
 #### HTML+CSS+자바스크립트 웹 표준의 정석 책 167~291p까지 예습
 
 * Blog 폰트 글꼴 글씨체 글씨 크기 배경 글자 색 등등 바꿈
+
+
+* git blog를 HTML과 CSS를 이용하여 만들기
 
 
 <br><br><br>

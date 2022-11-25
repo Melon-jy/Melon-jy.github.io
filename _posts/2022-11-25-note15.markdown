@@ -122,21 +122,7 @@ name=aaa&age=22 <- pst 요청은 message-body부분에
 * 여러 개의 파일 첨부 가능
 * 용량 제한이 없음
 * mltiple을 붙이면 여러개 선택 가능
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
+* HTML로 기본 구성, 꾸미기는 CSS, javascript로 기능 생성
 
 
 
