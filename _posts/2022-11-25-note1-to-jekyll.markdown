@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "웹 네트워크"
+title:  "HTTP와 웹 네트워크"
 date:   2022-11-25 09:10:33 +0900
 categories: jekyll update
 ---
@@ -19,8 +19,31 @@ categories: jekyll update
 * stateless - 연결 요청 응답 후 연결 끊음 (많은 Client에 대응 가능)
 * Stateful로 여러 Client에게 응대하기 위해 multi thread (멀티스레드)를 사용함 ssh, ftp, chatting, google meet(telnet+secure)
 * HTTP5는 Stateless 방식으로 함
-* 
-* 
+
+### HTTP
+
+* Web Browser Header(요청에 대한 보충 정의) 요청헤더, 공통헤더, Entity header
+
+```
+Method ->      Get     <- request line 
+URL      ->       /.../a.html
+Protocol/version       ->      http/1.1
+Header    ->    {server: localhost:5500
+user-agent : ....
+...} => Message-body <-post method일때 보내는 데이터
+response status-> HTTP/1.1 -> 200 ok 
+```
+
+* server header(응답에 대한 부연 설명) 응답헤더, 공통헤더, Entity header
+* Message-body
+```
+{Content-length : ~(byte)
+content-type : text/html; charset=UTF-8}
+<!Doctype html>
+<html>
+
+</html>
+```
 * 
 * 
 * 
