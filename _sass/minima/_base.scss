@@ -80,6 +80,7 @@ figure > img {
 
 figcaption {
   font-size: $small-font-size;
+  font-family: 's-core dream9';
 }
 
 
@@ -144,6 +145,7 @@ blockquote {
   padding-left: $spacing-unit / 2;
   @include relative-font-size(1.125);
   font-style: italic;
+  font-family: 's-core dream9';
 
   > :last-child {
     margin-bottom: 0;
@@ -161,7 +163,7 @@ blockquote {
  */
 pre,
 code {
-  font-family: $code-font-family;
+  font-family: '$code-font-family';
   font-size: 0.9375em;
   border: 1px solid $border-color-01;
   border-radius: 3px;
