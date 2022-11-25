@@ -9,7 +9,9 @@ categories: jekyll update
 
 * connection-Oritented - 연결 지향 -> 연결 후 통신 ex)전화
 * connectionless - 비연결 -> 연결없이 데이터 전송 ex)편지, 방송
-* 
+* subnet으로 date를 쏘면 subnet에 해당하는 모든 PC가 date를 얻을 수 있음
+* TCP - 데이터 전송에 대한 신뢰
+* UDP - 데이터 전송에 대한 신뢰가 없음 신뢰를 얻기 위해서는 다른 작업이 필요함
 
 
 
