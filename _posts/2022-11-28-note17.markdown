@@ -7,17 +7,6 @@ categories: jekyll update
 
 
 
-#### css폴더 별도로 만들어서 라이브로 띄워 주석으로 막아가면서 예습
-
-#### HTML+CSS+자바스크립트 웹 표준의 정석 책 167~291p까지 예습
-
-* Blog 폰트 글꼴 글씨체 글씨 크기 배경 글자 색 등등 바꿈
-
-
-* git blog를 HTML과 CSS를 이용하여 만들기
-
-* HTML 주소 https://melon-jy.github.io/html
-
 
 <br><br><br>
 
