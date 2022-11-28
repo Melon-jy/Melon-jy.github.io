@@ -1,9 +1,84 @@
 ---
 layout: post
-title:  "git 연습"
-date:   2022-11-25 13:27:33 +0900
+title:  "css 사용법"
+date:   2022-11-28 09:27:33 +0900
 categories: jekyll update
 ---
+
+## css 사용법
+
+* CSS란 Cascading style sheet
+* 1)selector 사용법
+* 2)specificity (스타일 적용 순서)
+* 3)box 다루는 법 (테두리, 여백, 박스 계산법)
+* 4)폰트 다루는 방법
+* 5)색상 지정하는 방법
+* 6)배경 다루는 방법
+* 7)block type 과 inline 다루는 방법
+* 8)위치 조정하는 방법
+* 9)이후 레디언트나 애니메이션은 css 고급 과정
+
+### 수업 내용
+
+* 셀렉터 {스타일: 값; 스타일: 값; ...}
+* {-} 와일드카드
+* 태그명{-}
+* 태그명,태그명,태그명 {-} 여러 태그를 한번에 지정
+* .그룹명-class {-}
+* #태그id {-}
+* -[속성명=값] {-}
+* 상태명(hover){-} pseudo selector
+* <!----> 는 HTML주석 /* 은 css주석
+*  solid = 실선
+*  margin = 여백
+* 개발자의 지식인 = stack overflow
+* 웬만하면 남이 만든 라이브러리와 유명한 오픈 소스를 사용하는게 좋음
+* 회사 프로젝트에 연습하면 안됨
+* angular js, react, vue.js를 추천함
+* id는 중복되면 안됨
+* hover - 맴돌거나 유지하는 것
+* *은 전체태그
+
+### 예제 2-2
+
+* 조상 자손 {-} ex)#content li{-}
+* 부모> 자식{-} ex) ul>li {-}
+* 태그 + 다음태그{-} ex) img + ul {-}
+
+### 예제 3-1
+
+* 대상자 조건1 조건2 ... {-} ex) div#content =content라는 조건에 해당하는 div
+* div #content 라고 치면 조건 -> 자손으로 바뀌기 때문에 주의해야함
+* ul.cl 도 조건이고 ul .cl은 자손이다
+* ul.c1.c2 = 대상자 조건 조건 두 조건에 다 해당하는 것만 적용됨
+* ul.menu li = 조상의 조건에 해당하는 자손에게 적용
+* ul.menu li.c2= 조상의 조건에 해당하는 자손 중 조건에 해당하는 자손만 적용
+
+### 예제 3-2
+
+* div#menu li.c2{-}
+* input - 타이틀을 value 로 설정함
+* 그래서 보통 button을 사용함
+* input[type="text"][value] = 대상조건조건
+
+### 예제 3-3
+
+* input[name^="office"] ^를 붙이는 경우 office로 시작하는 단어의 태그를 모두 포함함
+* input[name$="fax"] $를 붙이는 경우 fax로 끝나는 단어의 태그를 모두 포함함
+
+### 예제 3-4
+
+* div:nth-child(2) : div이지만 부모로부터 2번째 자식인 경우
+* a:link{} : a태그의 링크에 해당하는 부분을 누르기 전의 상태 
+* a:visited{} : a태그의 링크에 해당하는 부분을 누른 후의 상태
+* a:active{} : a태그의 링크를 누르는 순간의 상태
+* a:focus{} = focus 수도 셀렉터 : tap이나 엔터 같은 키보드 입력을 받을 수 있는 상태
+* 연속화(중첩)를 캐스케이드(Cascade) 라고 한다
+* specificity - 스펙시피시티
+* body #id .class 순서로 값이 크고 값이 같은 경우 위의 것을 우선 순위로 변환함
+* 
+
+
 
 
 
