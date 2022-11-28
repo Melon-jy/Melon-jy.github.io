@@ -1,0 +1,168 @@
+---
+layout: post
+title:  "HTML name속성"
+date:   2022-11-28 09:27:33 +0900
+categories: Post
+---
+
+## Name속성
+### 예시 exam-03.HTML
+* 폼 항목에 Name을 지정하지 않으면 서버에 보내지 않는다.
+* input type="text" name="title"(파라미터명) => ABC(파라미터값) => _____?title(파라미터 명)=ABC(파라미터 값)
+* input type="text" name="name"
+* input type="tel" name="phone"
+* ABC 010-1111-2222 => _______?name=abc&phone=010-1111-2222
+* name과 phone은 파라미터 명
+* abc와 010-1111-2222 는 파라미터 값
+
+### 예시 exam-04
+
+* h1 checkbox 값 보내기
+* 체크하지 않으면 값을 보내지 않는다.
+* value를 지정하지 않으면, "ON"을 보낸다.
+* value를 지정하면 그 값을 보낸다.
+* 재직자 : input type="checkbox" name="working" br
+* 기혼자 : input type="checkbox" name="married" value="yes" br
+
+### 예시 exam-04 -> exam-05로 바꾸기
+
+* form action="/html/form/exam-02" method="get"
+
+* 혈액형 : 
+* input type="checkbox" name="bloodtype" O형
+* input type="checkbox" name="bloodtype" A형
+* input type="checkbox" name="bloodtype" B형
+* input type="checkbox" name="bloodtype" AB형
+* br
+
+* form action="/html/form/exam-02" method="get"
+
+* 혈액형 : 
+* input type="checkbox" name="bloodtype" value="O" O형
+* input type="checkbox" name="bloodtype" value="A" A형
+* input type="checkbox" name="bloodtype" value="B" B형
+* input type="checkbox" name="bloodtype" value="AB" AB형 
+* br
+
+### select 태그
+
+* value를 지정하지 않으면 option의 콘텐트를 보낸다
+* value를 지정하면, value 값을 보낸다
+
+* form action="/html/form/exam-02" method="get"
+
+* 혈액형:
+* select name="bloodtype"
+* option O형 /option
+* option A형 /option
+* option B형 /option
+* option AB형 /option
+* /select
+* br
+
+* form action="/html/form/exam-02" method="get"
+
+* 혈액형:
+* select name="bloodtype"
+* option value="" 선택하시오 /optin
+* option value="o" O형 /option
+* option value="a" A형 /option
+* option value="b" B형 /option
+* option value="ab" AB형 /option
+* /select
+* br
+
+* selected를 넣어두면 선택이 된 상태로 남아있음
+
+* form action="/html/form/exam-02" method="get"
+
+* 혈액형:
+* select name="bloodtype"
+* option value="" 선택하시오 /optin
+* option value="o" selected="" O형 /option
+* option value="a" A형 /option
+* option value="b" B형 /option
+* option value="ab" AB형 /option
+* /select
+* br
+
+### 예제 exam-06 복사해서 07로 변경
+
+* form action="/html/form/exam-02" method="get"
+
+* 혈액형:
+* select name="bloodtype"
+* option value=""> 선택하시오 /optin
+* option value="o"> selected="" O형 /option
+* option value="a"> A형 /option
+* option value="b"> B형 /option
+* option value="ab"> AB형 /option
+* /select
+* br
+* input type="submit" value="보내기"> br
+
+### 실수 예시
+
+* form action="/html/form/exam-02" method="get"
+
+* 버튼에 이름을 주면 보내짐
+* 버튼에 이름을 주어선 안됨
+
+* 혈액형:
+* select name="bloodtype"
+* option value=""> 선택하시오 /optin
+* option value="o"> selected="" O형 /option
+* option value="a"> A형 /option
+* option value="b"> B형 /option
+* option value="ab"> AB형 /option
+* /select
+* br
+* input type="submit" name="btn1" value="보내기"> br
+
+### id를 넣는 경우
+
+* form action="/html/form/exam-02" method="get"
+
+* name: 서버에 보내는 파라미터 이름
+* id: 태그를 가르키는 식별지. 보통 자바스크립트에서 태그를 다룰 때 사용할 것이다.
+
+
+* 혈액형:
+* select id="bloodtype" name="bloodtype"
+* option value=""> 선택하시오 /optin
+* option value="o"> selected="" O형 /option
+* option value="a"> A형 /option
+* option value="b"> B형 /option
+* option value="ab"> AB형 /option
+* /select
+* br
+* input id="btn1" type="submit" value="보내기"> br
+
+* 개발 과정 중 난이도 java 10 , SQL 4, js 7, HTML 3, CSS 5
+
+
+
+
+
+
+<br><br><br>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://melonweb.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
