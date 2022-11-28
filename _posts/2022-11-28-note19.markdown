@@ -9,6 +9,10 @@ categories: Post
 
 * https://melon-jy.github.io/html/
 
+* comments 남길 수 있는 게시판 만들어보기
+* 구역 더 잘 나눠서 깔끔하게 꾸며보기
+* 컨텐츠 더 만들기
+
 
 <br><br><br>
 
