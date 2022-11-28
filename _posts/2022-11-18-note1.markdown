@@ -2,7 +2,7 @@
 layout: post
 title:  "비트캠프 과제1"
 date:   2022-11-18 18:47:33 +0900
-categories: jekyll update
+categories: Post
 ---
 
 <span style="font-size:24px;">VSCode를 이용한 GitHub Blog 만들기</span>

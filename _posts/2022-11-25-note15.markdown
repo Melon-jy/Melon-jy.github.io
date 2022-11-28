@@ -2,7 +2,7 @@
 layout: post
 title:  "HTTP와 웹 네트워크"
 date:   2022-11-25 09:10:33 +0900
-categories: jekyll update
+categories: Post
 ---
 
 # 네트워킹(NetWorking)

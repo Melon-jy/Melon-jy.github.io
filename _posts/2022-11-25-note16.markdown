@@ -2,7 +2,7 @@
 layout: post
 title:  "git 연습"
 date:   2022-11-25 13:27:33 +0900
-categories: jekyll update
+categories: Post
 ---
 
 

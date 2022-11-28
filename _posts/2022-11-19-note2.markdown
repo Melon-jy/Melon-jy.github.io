@@ -2,7 +2,7 @@
 layout: post
 title:  "비트캠프 과제2"
 date:   2022-11-19 00:15:30 +0900
-categories: jekyll update
+categories: Post
 ---
 
 <span style="font-size:30px;">하이퍼바이저 자기주도 학습하기</span>

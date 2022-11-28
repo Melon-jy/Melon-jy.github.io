@@ -2,7 +2,7 @@
 layout: post
 title:  "HTML,HTTP 수업"
 date:   2022-11-24 09:10:33 +0900
-categories: jekyll update
+categories: Post
 ---
 
 * 한빛미디어에서 HTML5,css 바이블3 예제 다운로드

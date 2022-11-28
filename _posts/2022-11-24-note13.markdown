@@ -2,7 +2,7 @@
 layout: post
 title:  "HTTP, CSS Tag수업"
 date:   2022-11-24 09:30:33 +0900
-categories: jekyll update
+categories: Post
 ---
 
 

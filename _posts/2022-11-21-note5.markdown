@@ -2,7 +2,7 @@
 layout: post
 title:  "리눅스VM 수업"
 date:   2022-11-21 11:40:33 +0900
-categories: jekyll update
+categories: Post
 ---
 
 # Vagrant project VS VirtureBox

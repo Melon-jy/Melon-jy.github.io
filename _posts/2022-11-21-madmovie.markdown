@@ -2,7 +2,7 @@
 layout: post
 title:  "Valorant MadMovie"
 date:   2022-11-18 00:10:30 +0900
-categories: jekyll update
+categories: Post
 ---
 
 **Valorant Play MadMovie**

@@ -2,7 +2,7 @@
 layout: post
 title:  "시맨틱 태그 목적과 용도"
 date:   2022-11-24 18:00:33 +0900
-categories: jekyll update
+categories: Post
 ---
 # 시맨틱 태그
 

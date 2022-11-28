@@ -2,7 +2,7 @@
 layout: post
 title:  "team 프로젝트 1"
 date:   2022-11-22 17:40:33 +0900
-categories: jekyll update
+categories: Post
 ---
 
 ## 작업 내용
