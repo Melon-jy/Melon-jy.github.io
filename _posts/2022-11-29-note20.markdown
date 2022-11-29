@@ -25,16 +25,23 @@ categories: Post
 * no-repeat : 반복하지 않게 하는 것
 * url('___') : css에 이미지를 넣는 법
 * inline-block : 영역 안에서 위 아래로 놓이지 않고 옆으로 놓이게 하기
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
+
+### 도구
+
+* 도구(object)
+* 기능(function) =>함수 혹은 method 라고함
+* document object : 태그를 다루는 기능
+* 1)getElementbyid(태그아이디) 리턴->> 태그객체
+* 2)getElementsByTagName(태그이름) 리턴->> 태그목록
+* 3)createElement(태그이름) 리턴->> 태그 객체를 생성해서 리턴
+* 4)setAttribute(속성명,속성값) 리턴->> 태그 속성 값을 설정
+
+
+
+
+
+
+
 
 
 
