@@ -1,17 +1,36 @@
 ---
 layout: post
 title:  "HTML Blog CSS 꾸미기 과제"
-date:   2022-11-28 17:27:33 +0900
+date:   2022-11-28 09:27:33 +0900
 categories: Post
 ---
 
-## 다른 라이브러리 소스 복사 붙여넣기 하지말고 직접 만들기
+## 테두리(border)
 
-* https://melon-jy.github.io/html/
+* margin : 테두리 바깥 여백
+* padding : 테두리 안쪽 여백
+* 
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
 
-* comments 남길 수 있는 게시판 만들어보기
-* 구역 더 잘 나눠서 깔끔하게 꾸며보기
-* 컨텐츠 더 만들기
 
 
 <br><br><br>
