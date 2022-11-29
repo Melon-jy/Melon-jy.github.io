@@ -31,16 +31,12 @@ categories: Post
 * 도구(object)
 * 기능(function) =>함수 혹은 method 라고함
 * document object : 태그를 다루는 기능
-* 1)getElementbyid(태그아이디) 리턴->> 태그객체
-* 2)getElementsByTagName(태그이름) 리턴->> 태그목록
-* 3)createElement(태그이름) 리턴->> 태그 객체를 생성해서 리턴
+* 1)getElementbyid(TagId) 리턴->> 태그객체
+* 2)getElementsByTagName(TagName) 리턴->> 태그목록
+* 3)createElement(Id) 리턴->> 태그 객체를 생성해서 리턴
 * 4)setAttribute(속성명,속성값) 리턴->> 태그 속성 값을 설정
 
-
-
-
-
-
+* if 분기 문장 - js용어
 
 
 <br><br><br>
