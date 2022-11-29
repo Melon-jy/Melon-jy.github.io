@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "HTML Blog CSS 꾸미기 과제"
+date:   2022-11-28 17:27:33 +0900
+categories: Post
+---
+
+## 다른 라이브러리 소스 복사 붙여넣기 하지말고 직접 만들기
+
+* https://melon-jy.github.io/html/
+
+* comments 남길 수 있는 게시판 만들어보기
+* 구역 더 잘 나눠서 깔끔하게 꾸며보기
+* 컨텐츠 더 만들기
+
+
+<br><br><br>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://melonweb.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
