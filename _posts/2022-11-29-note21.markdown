@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "js 수업 아직 안함"
+title:  "테두리 다루기"
 date:   2022-11-29 16:27:33 +0900
 categories: Post
 ---
 
-## js 수업
+## 테두리 다루기
 
-
+1212
 
 
 
