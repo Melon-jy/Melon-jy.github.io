@@ -1,0 +1,94 @@
+---
+layout: post
+title:  "CPU instructions set"
+date:   2022-12-01 9:27:33 +0900
+categories: Post
+---
+
+책 한번씩 다 읽고 예제 볼것.
+
+다른 예제도 반복적으로 볼것.
+
+
+[ 프로그램 실행과 프로그래밍 ]
+
+Application(컴퓨터가 할일을 순서대로 기록한것=프로그래밍)  →
+
+OS  (1.읽기) →
+
+메모리 (2.저장) →
+
+CPU (3.명령어실행) →
+
+메모리 (4.보관) →
+
+OS (5.결과꺼내기) →
+
+Application (6.결과 출력) 
+
+** 읽기 ——> 저장   = Loading
+
+
+[ CPU와 RAM, bit ]
+
+CPU  <—————— RAM
+
+(데이터, 명령)
+
+RAM ——————>CPU
+
+(결과데이터)
+
+둘사이 선 개수(bit) = 64개(64bit) = 도로64개
+
+ex) 8bit cpu = 핀 개수 8개/ 32bit cpu = 핀 개수 32개/ 64bit cpu = 핀개수 64개
+
+### 명령어 작성1
+
+
+* 특징
+* 1)cpu bit가 적은 8bit 시절에는 개발자가 직접 작성하기도 했다.
+* 2)보통 2진수를 짧게 표현한 16진수를 사용해서 작성한다
+* 3)인간의 문자와 거리가 멀기 때문에 작성하기 매우 불편하고 힘들다
+* 4)cpu bit가 32bit, 64bit로 늘어나면서 더 어렵게 되었다.
+* 5)cpu마다 명령어가 다르기 때문에 다양한 cpu에서 실행할 수 있는 명령어를 작성하기 매우 힘들다
+* 6)명령어 - 전기적 신호=비트규칙
+
+### 명령어 작성2
+
+* Assembly
+* 2) 직접 기계어로 작성하는 대신 간결한 영어 단어로 이루어진 명령어 사용하기
+* 기계어 -> CPU = 실행
+* compile은 기계어로 번역, 변환 해주는 명령어이고
+* compiler는 Assembly 언어로 작성된 명령어를 cpu가 이해할 수 있는 기계어로 바꿔주는 프로그램이다.
+* assembly example hello world - 구글링
+* 특징
+* 1)명령어가 영어 단어와 비슷해서 작성하기 편하다
+
+
+
+
+
+
+
+<br><br><br>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://melonweb.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
