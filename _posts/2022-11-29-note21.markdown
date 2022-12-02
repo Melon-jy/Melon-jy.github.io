@@ -7,11 +7,20 @@ categories: Post
 
 ## 테두리 다루기
 
-1212
+* 최소값 주는 법 = min-가로 세로
+* 이미지 -> 제목 -> 설명
+```
+        position: relative;
+        width: 720;
+        margin: 0 auto;
+```
 
+### CSS와 JavaScript 코드의 분리
 
-
-
+* 분리의 이점
+* 가독성이 좋아진다
+* css나 JavaScript 코드를 다른 페이지에서 재사용하기 쉽다
+* 
 
 
 
