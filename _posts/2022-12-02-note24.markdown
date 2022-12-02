@@ -5,10 +5,16 @@ date:   2022-12-02 16:27:33 +0900
 categories: Post
 ---
 
- x가 이겼습니다
- o가 이겼습니다
- 무승부 입니다
 
+* HTML, CSS, JavaScript를 사용하여 웹 브라우저에서 실행할 수 있는 TicTacToe 게임을 만드시오.
+* 외부 라이브러리는 사용할 수 없습니다.
+* HTML, CSS, JavaScript는 각각 별도의 파일로 분리하시오.
+* 제출 내용- HTML, CSS, JavaScript 파일
+* x가 이겼습니다
+* o가 이겼습니다
+* 무승부 입니다
+* 등의 기능 추가
+* 최대한 공부하면서 하기.
 
 
 
