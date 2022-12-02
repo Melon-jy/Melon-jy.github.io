@@ -13,6 +13,10 @@ categories: Post
 * 구역 더 잘 나눠서 깔끔하게 꾸며보기
 * 컨텐츠 더 만들기
 
+## 네이버 홈 화면 똑같이 만들기
+
+* https://melon-jy.github.io/naver.io/
+
 
 <br><br><br>
 

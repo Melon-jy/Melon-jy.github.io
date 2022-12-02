@@ -65,6 +65,12 @@ ex) 8bit cpu = 핀 개수 8개/ 32bit cpu = 핀 개수 32개/ 64bit cpu = 핀개
 * 특징
 * 1)명령어가 영어 단어와 비슷해서 작성하기 편하다
 
+### OS, CPU, RAM, HDD, 기계어, 명령문 관계도
+
+* 개발자 작성 -> 기계어  -> HDD저장 -> RAM loading -> CPU core and L1 L2 L3 -> OS가 RAM과 CPU를 제어
+* 개발자 작성 -> 명령어  -> Compiler로 Compile -> 기계어 -> HDD저장 -> RAM loading -> CPU core adn L1 L2 L3 -> OS가 RAM과 CPU제어
+* 하드디스크의 종류 : HDD/ SSD/ CD-ROM/ DVD/ USB
+
 
 
 
