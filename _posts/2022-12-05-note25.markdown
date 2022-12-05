@@ -1,0 +1,102 @@
+---
+layout: post
+title:  "Script 주석"
+date:   2022-12-02 16:27:33 +0900
+categories: Post
+---
+
+
+
+## Script 주석
+
+* // 주석 : //뒤에 한 줄 모두를 주석 상태로 지정
+* /* */ 주석: 주석태그 안에 모든 것을 주석 상태로 지정
+* 태그의 위치는 정답이 따로 없음, 위치를 알아볼 수 있으면 됨
+* 스크립트 태그 안에 type의 경우 오타를 낼 것 같으면 안적는게 낫고 적을 것이면 정확하게 적어줘야함
+* open source는 수 많은 사람들의 손을 거쳐 강건하기 때문에 안정성이 높다
+* 라이브러리를 개인의 실력을 키우기 위해 개인적으로 만들어 보는 것은 좋지만 그것을 회사에 사용해선 안됨
+* HTML코드가 아닌 경우엔 코드를 무시하고 안에 내용을 출력해버림
+
+### 객체와 함수
+```
+document.getElementById("btn1")
+```
+* object : 함수가 작업할 때 사용하는 기본 데이터
+* operator, function, method : 작업을 수행하는 함수
+* parameter, argument: 작업을 제어하는 데이터
+```
+window.alert("hello, world")
+```
+* window(객체).alert(함수)("hello, world"(argument, parameter))
+* 도구, 기능, 기능 수행에 필요한 데이터
+
+### 인터프리트 방식과 자바스크립트
+
+
+* 인터프리트(소스) : (한 줄씩) 명령문이 잘못 작성됐다 하더라도 실행하기 전까지 알 수 없다
+* 자바스크립트(소스) : (전체) 명령문이 잘못되었으면 컨파일 과정에서 모두 걸러진다(문법 오류는 없는 상태)
+* node : V8 엔진으로 javascript를 사용케 하는 것
+```
+nodejs hello 예제 복사 붙여넣기
+
+npm install express
+```
+* npm: 노드 패키지 매니저
+* js에서는 ms단위로 시간을 사용함
+* then() : 성공 했을때 사용할 함수
+* catch() : 실패 했을때 사용할 함수
+* finally() : 성공하든 실패하든 최종적으로 사용할 함수
+```
+function execute(resolve, reject) {
+    console.log("작업수행");
+    resolve();
+}
+function success() {
+    console.log("success");
+}
+function fail() {
+    console.log("fail");
+}
+function finally() {
+    console.log("completed)
+}
+
+```
+```
+  setTimeout(a, b){ : b초 뒤에 a를 실행하라
+})
+
+var v1 = "hello"; : v1=변수
+
+```
+
+### javascript ex02
+
+* initializer : 변수 선언문에 값 할당 문장 (초기화)
+
+
+
+
+
+
+<br><br><br>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://melonweb.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
